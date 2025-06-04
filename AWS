@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreCloud AWS Service Suite</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn active">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="content">
+    <h1 class="centered-title">CoreCloud AWS Service Suite</h1>
+    <p class="intro">Whether you're migrating from legacy systems, modernizing apps, managing cloud infrastructure, or optimizing cost — we partner with leading AWS specialists to deliver end-to-end value.</p>
+
+    <section class="two-column">
+      <div>
+        <h2>Migrate</h2>
+        <ul>
+          <li>Lift & shift migrations</li>
+          <li>Application rehosting</li>
+          <li>Data transfer planning & execution</li>
+          <li>Cloud readiness assessments</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Modernize</h2>
+        <ul>
+          <li>Containerization (ECS/EKS)</li>
+          <li>Microservices architecture</li>
+          <li>Serverless and event-driven design</li>
+          <li>DevOps integration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="two-column">
+      <div>
+        <h2>Manage</h2>
+        <ul>
+          <li>CloudOps & platform engineering</li>
+          <li>Monitoring, alerts & uptime assurance</li>
+          <li>Security posture & compliance</li>
+          <li>Backup & DR planning</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Optimize</h2>
+        <ul>
+          <li>Cost reduction initiatives</li>
+          <li>Right-sizing and performance tuning</li>
+          <li>Architecture reviews</li>
+          <li>Governance frameworks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="centered">
+      <a href="contact.html" class="cta-btn">Book AWS Discovery Session</a>
+    </section>
+  </main>
+</body>
+</html>
