@@ -1,56 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact CoreCloud</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <div class="small-banner">
-    <header class="banner-header">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-btn">Home</a></li>
-          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-          <li><a href="resources.html" class="nav-btn">Resources</a></li>
-          <li><a href="contact.html" class="nav-btn active">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main class="content">
-    <h1 class="centered-title">Let’s Talk</h1>
-    <p class="intro">Book a discovery call, submit your requirements, or get in touch with CoreCloud today. We’ll get back to you within 24 hours.</p>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
 
-    <section class="two-column">
-      <div>
-        <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:info@corecloud.africa">info@corecloud.africa</a></p>
-        <p>Phone: +27 10 500 5000</p>
-        <p>Address:<br>433 Broadacres Country Estate<br>Syringa Rd, Broadacres, Gauteng</p>
-      </div>
+/* Header */
+.small-banner {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/sandton-skyline.jpg') center/cover no-repeat;
+  color: white;
+  padding: 20px 0;
+}
 
-      <div>
-        <h2>Send a Message</h2>
-        <form action="mailto:info@corecloud.africa" method="POST" enctype="text/plain">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
+.banner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
+.logo {
+  max-height: 60px;
+}
 
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-          <input type="submit" value="Send" class="cta-btn">
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: rgba(255,255,255,0.2);
+  border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.cta-btn {
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 8px;
+}
+
+.cta-btn:hover {
+  background: #0055a5;
+}
+
+/* Division Grid & Resources */
+.division-grid,
+.resource-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.division-card,
+.resource-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px;
+  flex: 1 1 300px;
+}
+
+.division-card h2,
+.resource-card h3 {
+  margin-bottom: 12px;
+  color: #003366;
+}
+
+.division-card p,
+.resource-card p {
+  margin-bottom: 12px;
+}
+
+/* Layout Utilities */
+.centered-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #003366;
+}
+
+.intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 20px;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.two-column > div {
+  flex: 1 1 400px;
+}
+
+.two-column ul {
+  padding-left: 20px;
+}
+
+.centered {
+  text-align: center;
+  margin: 40px 0;
+}
