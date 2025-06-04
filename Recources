@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreCloud Resources</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn active">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="content">
+    <h1 class="centered-title">CoreCloud Resources</h1>
+    <p class="intro">Explore our executive-grade resources built to enable growth, improve sales performance, and support cloud delivery excellence.</p>
+
+    <section class="resource-grid">
+      <div class="resource-card">
+        <h3>Sales Consulting Pitch Deck</h3>
+        <p>Full overview of our A–Z framework and value proposition.</p>
+        <a href="/downloads/CoreCloud_Sales_Consulting_Pitch_Deck.pptx" class="nav-btn">Download</a>
+      </div>
+
+      <div class="resource-card">
+        <h3>Audit & Scorecard Toolkit</h3>
+        <p>Environment and salesmaker templates used in our consulting engagements.</p>
+        <a href="/downloads/CoreCloud_Sales_Assessment_Templates.xlsx" class="nav-btn">Download</a>
+      </div>
+
+      <div class="resource-card">
+        <h3>Onboarding Pack</h3>
+        <p>Client-facing pack for new consulting engagements, including delivery outline.</p>
+        <a href="/downloads/CoreCloud_Client_Onboarding_Pack.docx" class="nav-btn">Download</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
