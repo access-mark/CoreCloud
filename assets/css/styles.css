@@ -1,3 +1,123 @@
 body {
-  background-color: lightblue;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.small-banner {
+  background-color: #f0f0f0;
+  padding: 1rem 0;
+}
+
+.banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  max-height: 150px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+.nav-btn.active {
+  font-weight: bold;
+  color: #000;
+}
+
+main.content, main.homepage {
+  padding: 2rem;
+}
+
+.centered-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.two-column div {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #004999;
+}
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.download-list li {
+  margin: 1rem 0;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.75rem 2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #004999;
 }
