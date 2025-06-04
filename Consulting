@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreCloud Consulting</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn active">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="content">
+    <h1 class="centered-title">CoreCloud Consulting</h1>
+    <p class="intro">We enable sales transformation, GTM acceleration, and executive-level advisory that connects strategy with execution. From high-trust advisory to full execution support — we build sales engines that scale.</p>
+
+    <section class="two-column">
+      <div>
+        <h2>Sales Advisory</h2>
+        <ul>
+          <li>Sales environment diagnostics</li>
+          <li>GTM strategy & ICP refinement</li>
+          <li>Salesmaker scorecards & coaching</li>
+          <li>Deal support and playbook design</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Strategic GTM</h2>
+        <ul>
+          <li>Market entry strategy</li>
+          <li>Channel & partnership development</li>
+          <li>Forecast discipline & sales ops setup</li>
+          <li>Boardroom-ready sales execution</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="centered">
+      <a href="/downloads/CoreCloud_Sales_Consulting_Pitch_Deck.pptx" class="cta-btn">Download Pitch Deck</a>
+      <a href="contact.html" class="cta-btn">Book Strategy Session</a>
+    </section>
+  </main>
+</body>
+</html>
