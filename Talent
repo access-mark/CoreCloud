@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreCloud Talent Placement</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn active">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="content">
+    <h1 class="centered-title">CoreCloud Talent Placement</h1>
+    <p class="intro">We place high-performance professionals across cloud, dev, architecture, and GTM roles — fast, precisely, and with zero risk. Backed by Careerweb and Synthesis, we bring elite talent into your team with minimal friction.</p>
+
+    <section class="two-column">
+      <div>
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Talent sourcing and screening</li>
+          <li>Interview coordination</li>
+          <li>Client briefing & shortlisting</li>
+          <li>Candidate replacement guarantee</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Specialist Roles</h2>
+        <ul>
+          <li>AWS Cloud Engineers & Architects</li>
+          <li>Full-Stack Developers</li>
+          <li>DevOps & Platform Engineers</li>
+          <li>Solution Architects & Sales Engineers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="centered">
+      <a href="contact.html" class="cta-btn">Submit a Brief</a>
+    </section>
+  </main>
+</body>
+</html>
