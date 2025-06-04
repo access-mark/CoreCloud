@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoreCloud Consulting</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     .logo {
       max-height: 150px;
       width: auto;
+    }
+
+    .page-banner {
+      height: 300px;
+      background-image: url('assets/images/consulting-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-overlay h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
     }
   </style>
 </head>
@@ -29,36 +54,40 @@
     </header>
   </div>
 
+  <div class="page-banner">
+    <div class="banner-overlay">
+      <h1>CoreCloud Consulting</h1>
+    </div>
+  </div>
+
   <main class="content">
-    <h1 class="centered-title">CoreCloud Consulting</h1>
-    <p class="intro">High-impact advisory for sales leaders, founders, and executives seeking growth, turnaround, or scale. We don't just consult — we co-pilot execution.</p>
+    <h2 class="centered-title">Sales Acceleration, Strategy, and Execution</h2>
+    <p class="intro">Our consulting arm focuses on enabling your sales environment, assessing your team and structure, and implementing a go-to-market methodology built for results.</p>
 
     <section class="two-column">
       <div>
-        <h2>What We Do</h2>
+        <h3>Consulting Services</h3>
         <ul>
-          <li>Assess & transform your sales environment</li>
-          <li>Diagnose issues in team, strategy, or execution</li>
-          <li>Design & operationalize winning sales structures</li>
-          <li>Coach & develop talent for real-world results</li>
-          <li>Support GTM, pipeline acceleration & scale-up</li>
+          <li>Sales team evaluation and performance reviews</li>
+          <li>Market segmentation and GTM planning</li>
+          <li>Pipeline buildout and closure acceleration</li>
+          <li>Executive advisory and leadership coaching</li>
         </ul>
       </div>
-
       <div>
-        <h2>Why It Works</h2>
+        <h3>End-to-End Process</h3>
         <ul>
-          <li>Led by executives with boardroom & battlefield experience</li>
-          <li>Data-driven, partner-neutral, results-obsessed</li>
-          <li>Structured process with full IP toolkit</li>
-          <li>No fluff — only actionable insight and co-delivery</li>
+          <li>Environment Assessment</li>
+          <li>Team & Role Analysis</li>
+          <li>Sales System Toolkit Deployment</li>
+          <li>Pipeline Review & Executive Report</li>
         </ul>
       </div>
     </section>
 
     <div class="centered">
-      <a href="downloads/CoreCloud_Sales_Consulting_Pitch_Deck.pptx" class="cta-btn">Download Pitch Deck</a>
-      <a href="contact.html" class="cta-btn">Schedule a Call</a>
+      <a href="downloads/CoreCloud_Sales_Assessment_Templates.xlsx" class="cta-btn">Download Toolkit</a>
+      <a href="contact.html" class="cta-btn">Book Consulting Call</a>
     </div>
   </main>
 </body>
