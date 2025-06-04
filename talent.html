@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoreCloud Talent Placement</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     .logo {
       max-height: 150px;
       width: auto;
+    }
+
+    .page-banner {
+      height: 300px;
+      background-image: url('assets/images/talent-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-overlay h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
     }
   </style>
 </head>
@@ -29,35 +54,39 @@
     </header>
   </div>
 
+  <div class="page-banner">
+    <div class="banner-overlay">
+      <h1>Talent Placement</h1>
+    </div>
+  </div>
+
   <main class="content">
-    <h1 class="centered-title">Elite Talent, Precisely Placed</h1>
-    <p class="intro">We source, screen, and place top-tier professionals through trusted partnerships — enabling our clients to scale confidently and competently.</p>
+    <h2 class="centered-title">Elite Cloud & Digital Talent, Delivered</h2>
+    <p class="intro">We help you source, screen, and place top-tier talent via CoreCloud’s strategic partner network. From developers to architects and sales professionals, we deliver results.</p>
 
     <section class="two-column">
       <div>
-        <h2>Our Talent Services</h2>
+        <h3>Placement Services</h3>
         <ul>
-          <li>Permanent and contract placements</li>
-          <li>End-to-end sourcing, screening & onboarding</li>
-          <li>Technical, sales, and executive roles</li>
-          <li>Culture-aligned and skills-verified</li>
+          <li>Role scoping and profiling</li>
+          <li>Talent sourcing via Careerweb</li>
+          <li>Screening and interview coordination</li>
+          <li>Contract or permanent placement</li>
         </ul>
       </div>
-
       <div>
-        <h2>Powered by Proven Partners</h2>
+        <h3>Powered by Partnership</h3>
         <ul>
-          <li>Careerweb: sourcing and screening engine</li>
-          <li>Synthesis & DVT: client delivery and capability oversight</li>
-          <li>CoreCloud: point of contact, agent of record, 100% accountable</li>
-          <li>Compliance, IP, and talent lifecycle coverage</li>
+          <li>Careerweb: sourcing & screening engine</li>
+          <li>Synthesis: cloud talent fulfilment</li>
+          <li>CoreCloud: contract and commercial agent</li>
         </ul>
       </div>
     </section>
 
     <div class="centered">
-      <a href="downloads/CoreCloud_Client_Onboarding_Pack.docx" class="cta-btn">Download Onboarding Pack</a>
-      <a href="contact.html" class="cta-btn">Submit a Talent Brief</a>
+      <a href="downloads/CoreCloud_Talent_Placement_Guide.pdf" class="cta-btn">Download Talent Guide</a>
+      <a href="contact.html" class="cta-btn">Request Talent Now</a>
     </div>
   </main>
 </body>
