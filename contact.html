@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoreCloud – Build. Modernize. Scale.</title>
+  <title>Contact CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -12,41 +12,43 @@
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-btn active">Home</a></li>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
-          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="contact.html" class="nav-btn active">Contact</a></li>
         </ul>
       </nav>
     </header>
   </div>
 
-  <main class="homepage">
-    <section class="hero">
-      <h1 class="hero-title">Build. Modernize. Scale.</h1>
-      <p class="hero-subtitle">CoreCloud delivers strategic consulting, AWS cloud transformation, and high-performance talent to power growth.</p>
-      <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
-    </section>
+  <main class="content">
+    <h1 class="centered-title">Let’s Talk</h1>
+    <p class="intro">Book a discovery call, submit your requirements, or get in touch with CoreCloud today. We’ll get back to you within 24 hours.</p>
 
-    <section class="division-grid">
-      <div class="division-card">
-        <h2>CoreCloud Consulting</h2>
-        <p>Sales transformation, GTM acceleration, and executive-level advisory. Strategy meets execution.</p>
-        <a href="consulting.html" class="nav-btn">Explore Consulting</a>
+    <section class="two-column">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:info@corecloud.africa">info@corecloud.africa</a></p>
+        <p>Phone: +27 10 500 5000</p>
+        <p>Address:<br>433 Broadacres Country Estate<br>Syringa Rd, Broadacres, Gauteng</p>
       </div>
 
-      <div class="division-card">
-        <h2>CoreCloud AWS Service Suite</h2>
-        <p>Migrate, Modernize, Manage & Optimize with AWS experts and ecosystem partners.</p>
-        <a href="aws.html" class="nav-btn">Explore AWS Services</a>
-      </div>
+      <div>
+        <h2>Send a Message</h2>
+        <form action="mailto:info@corecloud.africa" method="POST" enctype="text/plain">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
 
-      <div class="division-card">
-        <h2>CoreCloud Talent Placement</h2>
-        <p>Elite professionals sourced, screened, and placed through strategic partnerships with Careerweb and Synthesis.</p>
-        <a href="talent.html" class="nav-btn">Explore Talent Solutions</a>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+          <input type="submit" value="Send" class="cta-btn">
+        </form>
       </div>
     </section>
   </main>
