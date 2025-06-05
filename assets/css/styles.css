@@ -19,7 +19,7 @@ header {
 
 header .logo {
     height: 175px; /* Increased logo height to 175px */
-    margin-left: auto; /* Move logo to the far right */
+    margin-right: 20px; /* Add spacing between logo and nav */
 }
 
 nav ul {
