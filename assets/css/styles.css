@@ -3,58 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – CoreCloud</title>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
     }
 
     /* Navigation Bar Style */
     .small-banner {
-      background-color: #fff; /* White background */
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(135deg, #004e92, #000428); /* Dark Gradient */
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* Logo aligned to left */
+      justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 1000;
+      transition: all 0.3s ease;
     }
 
     .logo {
       max-height: 150px;
       width: auto;
-      margin-right: 2rem; /* Spacing between logo and nav items */
+      transition: transform 0.3s ease; /* Smooth transform on hover */
+    }
+
+    .logo:hover {
+      transform: scale(1.05); /* Logo zoom effect on hover */
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
       padding: 0;
       margin: 0;
-      justify-content: center; /* Center navigation links */
+      justify-content: center;
     }
 
     nav a.nav-btn {
       text-decoration: none;
-      font-weight: 600;
-      color: #0077cc;
+      font-weight: 700;
+      color: #fff; /* White text */
       padding: 0.5rem 0.75rem;
-      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
-      color: #005fa3;
-      font-weight: bold; /* Add bold effect on hover */
-      text-decoration: none;
+      color: #00ff99; /* Techy green for hover effect */
+      transform: scale(1.1); /* Slight scale up effect */
+    }
+
+    nav a.nav-btn::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #00ff99; /* Green underline effect */
+      bottom: 0;
+      left: 50%;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    nav a.nav-btn:hover::after {
+      width: 100%; /* Underline expands on hover */
+      left: 0;
     }
 
     .page-banner {
@@ -65,7 +87,7 @@
     }
 
     .content {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
@@ -139,7 +161,7 @@
     }
 
     footer .socials a:hover {
-      color: #0077cc;
+      color: #00ff99;
     }
 
     footer .copyright {
