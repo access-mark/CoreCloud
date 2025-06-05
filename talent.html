@@ -11,6 +11,7 @@
       font-family: 'Segoe UI', Roboto, sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
+      padding-top: 180px; /* offset for fixed nav */
     }
 
     .small-banner {
@@ -20,6 +21,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
 
     .logo {
@@ -60,13 +66,13 @@
       background-position: center;
     }
 
-    main {
+    .content {
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
 
-    h1 {
+    .content h1 {
       font-size: 3rem;
       font-weight: 700;
       text-align: center;
@@ -75,50 +81,35 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .card-grid {
+    .grid-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       margin-top: 2rem;
     }
 
     .card {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
     .card h3 {
       margin-top: 0;
       color: #003366;
-      font-size: 1.25rem;
     }
 
     .card p {
+      font-size: 1rem;
       color: #444;
-      font-size: 1rem;
       line-height: 1.6;
-    }
-
-    .cta-section {
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    .cta-btn {
-      background-color: #0077cc;
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-btn:hover {
-      background-color: #005fa3;
     }
 
     footer {
@@ -175,49 +166,41 @@
     </header>
   </div>
 
-  <!-- Banner -->
+  <!-- Hero Banner -->
   <div class="page-banner"></div>
 
-  <!-- Main Content -->
-  <main>
+  <!-- Page Content -->
+  <main class="content">
     <h1>CoreCloud Talent Placement</h1>
-
-    <div class="card-grid">
+    <div class="grid-cards">
       <div class="card">
         <h3>Elite Talent</h3>
         <p>We place highly skilled professionals across cloud, dev, data, security, and architecture domains.</p>
       </div>
-
       <div class="card">
         <h3>Strategic Sourcing</h3>
         <p>Through partnerships with CareerWeb and Synthesis, we streamline sourcing, screening, and placement.</p>
       </div>
-
       <div class="card">
         <h3>Contract & Permanent</h3>
         <p>We support both contract and permanent placements with full compliance and performance replacement guarantees.</p>
       </div>
-
       <div class="card">
         <h3>Executive Oversight</h3>
         <p>All engagements are guided by CoreCloud leadership to ensure quality, alignment, and measurable outcomes.</p>
       </div>
-    </div>
-
-    <div class="cta-section">
-      <a href="contact.html" class="cta-btn">Book a Talent Strategy Call</a>
     </div>
   </main>
 
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      </div>
+        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
     </div>
   </footer>
 
@@ -227,6 +210,5 @@
           domain="www.chatbase.co"
           defer>
   </script>
-
 </body>
 </html>
