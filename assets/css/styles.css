@@ -1,141 +1,207 @@
-/* ========== GLOBAL STYLES ========== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-}
+    /* Navigation Bar Style */
+    .small-banner {
+      background: linear-gradient(135deg, #003366, #0077cc); /* Gradient background */
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0; /* Stick to top */
+      z-index: 1000;
+    }
 
-a {
-  text-decoration: none;
-}
+    .logo {
+      max-height: 150px;
+      width: auto;
+    }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
 
-nav a.nav-btn {
-  color: #0077cc;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s;
-}
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff; /* White text for better contrast */
+      padding: 0.5rem 0.75rem;
+      font-size: 1.1rem; /* Slightly bigger text */
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
 
-nav a.nav-btn:hover,
-nav a.nav-btn.active {
-  color: #005fa3;
-  text-decoration: underline;
-}
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #fff;
+      text-decoration: none;
+    }
 
-/* ========== BANNER STYLES ========== */
+    nav a.nav-btn::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #fff; /* Underline color */
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s;
+    }
 
-.page-banner {
-  height: 450px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+    nav a.nav-btn:hover::after {
+      width: 100%; /* Underline expands on hover */
+    }
 
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    nav ul li {
+      display: inline-block;
+    }
 
-.banner-overlay h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-}
+    nav a.nav-btn:hover {
+      color: #005fa3; /* Change color on hover */
+    }
 
-/* ========== LOGO ========== */
+    .page-banner {
+      height: 480px;
+      background-image: url('assets/images/sandton-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+    }
 
-.logo {
-  max-height: 150px;
-  width: auto;
-  margin-right: auto;
-}
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
 
-/* ========== HOMEPAGE SECTIONS ========== */
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
 
-.homepage {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
+    .section {
+      margin-top: 3rem;
+    }
 
-.hero-subtitle {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #555;
-}
+    .section h2 {
+      color: #003366;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
 
-.cta-btn {
-  display: inline-block;
-  margin: 1.5rem auto;
-  padding: 0.9rem 2rem;
-  background-color: #0077cc;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
+    .section p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
 
-.cta-btn:hover {
-  background-color: #005fa3;
-}
+    .cta-section {
+      text-align: center;
+      margin-top: 4rem;
+    }
 
-.division-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
+    .cta-btn {
+      background-color: #0077cc;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
 
-.division-card {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    .cta-btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="small-banner">
+    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
+      <nav style="width: 100%;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-.division-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
+  <!-- Hero Banner -->
+  <div class="page-banner"></div>
 
-.division-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
+  <!-- Page Content -->
+  <main class="content">
+    <h1>Contact Us</h1>
+    <form id="contact-form" action="#" method="POST">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
 
-.division-card p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-.division-card .nav-btn {
-  font-weight: 600;
-  color: #0077cc;
-  text-decoration: none;
-}
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
 
-.division-card .nav-btn:hover {
-  text-decoration: underline;
-}
+      <div>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="Consulting Inquiry">Consulting Inquiry</option>
+          <option value="AWS Services">AWS Services</option>
+          <option value="Talent Placement">Talent Placement</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" id="terms" name="terms" required /> I agree to the <a href="#">terms and conditions</a>
+        </label>
+      </div>
+
+      <div style="text-align: center;">
+        <button type="submit" class="submit-btn">Send Message</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
