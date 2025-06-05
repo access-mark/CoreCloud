@@ -70,7 +70,7 @@ main {
 
 /* Simple Footer Styling */
 footer {
-    background: linear-gradient(135deg, #00FFFF, #333); /* Gradient background */
+    background-color: #003366; /* Dark blue background */
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -104,7 +104,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: #333; /* Cyan color on hover */
+    color: #00FFFF; /* Cyan color on hover */
     text-decoration: underline;
 }
 
