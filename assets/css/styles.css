@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – CoreCloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -13,13 +13,14 @@
       color: #1e1e1e;
     }
 
+    /* Navigation Bar Style */
     .small-banner {
       background-color: #fff; /* White background */
       padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       align-items: center;
-      justify-content: space-between; /* Ensure space between logo and nav */
+      justify-content: flex-start; /* Logo aligned to left */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -51,7 +52,8 @@
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
       color: #005fa3;
-      text-decoration: underline;
+      font-weight: bold; /* Add bold effect on hover */
+      text-decoration: none;
     }
 
     .page-banner {
@@ -62,7 +64,7 @@
     }
 
     .content {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
@@ -121,7 +123,7 @@
 <body>
   <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header" style="display: flex; align-items: center; padding: 1rem 0; width: 100%;">
+    <header class="banner-header" style="text-align: left; display: flex; flex-direction: row; align-items: center; padding: 1rem 0;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
       <nav style="width: 100%;">
         <ul>
