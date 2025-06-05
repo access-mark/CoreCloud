@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreCloud – AWS Service Suite</title>
+  <title>CoreCloud – Talent Placement</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -39,7 +39,7 @@
 
     .page-banner {
       height: 480px;
-      background-image: url('assets/images/aws-bannerimage.png');
+      background-image: url('assets/images/talent-bannerimage.png');
       background-size: cover;
       background-position: center;
       position: relative;
@@ -63,6 +63,57 @@
       text-align: center;
       margin: 0;
     }
+
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .cta a {
+      background: #0077cc;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cta a:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -74,8 +125,8 @@
         <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-          <li><a href="aws.html" class="nav-btn active">AWS Service Suite</a></li>
-          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn active">Talent Placement</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
           <li><a href="contact.html" class="nav-btn">Contact</a></li>
         </ul>
@@ -86,7 +137,36 @@
   <!-- Hero Banner -->
   <div class="page-banner">
     <div class="banner-overlay">
-      <h1>AWS Service Suite</h1>
+      <h1>Talent Placement</h1>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Elite Talent. Strategic Delivery.</h2>
+    <p>We match top-tier professionals with high-impact roles in cloud, data, and digital transformation. Through our strategic partnerships with Careerweb and Synthesis, we access deep pools of vetted candidates and provide end-to-end placement services with speed and precision.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Specialist Sourcing</h3>
+        <p>Access vetted experts in AWS, DevOps, architecture, data engineering, and more through our curated partner network.</p>
+      </div>
+      <div class="card">
+        <h3>Client-Led Engagements</h3>
+        <p>We tailor every placement to your business context and team dynamics — not just role descriptions.</p>
+      </div>
+      <div class="card">
+        <h3>Speed & Accuracy</h3>
+        <p>Accelerated turnaround with rigorous screening ensures you meet top talent before your competitors do.</p>
+      </div>
+      <div class="card">
+        <h3>Partnership Model</h3>
+        <p>Flexible engagement structures, fair profit-sharing, and full transparency at every stage of the process.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="contact.html">Request Talent</a>
     </div>
   </div>
 </body>
