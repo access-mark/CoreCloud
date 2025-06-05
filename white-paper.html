@@ -5,211 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>White Paper – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Roboto, sans-serif;
-      background-color: #f4f6f8;
-      color: #1e1e1e;
-    }
-
-    .small-banner {
-      background-color: #fff;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      max-height: 150px;
-      width: auto;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      padding: 0;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-
-    nav a.nav-btn {
-      text-decoration: none;
-      font-weight: 600;
-      color: #0077cc;
-      padding: 0.5rem 0.75rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a.nav-btn:hover,
-    nav a.nav-btn.active {
-      color: #005fa3;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    .page-banner {
-      height: 480px;
-      background-image: url('assets/images/white-paper-bannerimage.png');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .content {
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
-    }
-
-    .content h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 2rem 0;
-      color: #003366;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .section {
-      margin: 3rem 0;
-    }
-
-    .section h2 {
-      color: #003366;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-
-    .section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .diagram {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .diagram img {
-      max-width: 720px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-
-    .download-cta {
-      text-align: center;
-      margin: 3rem 0;
-    }
-
-    .download-cta a {
-      display: inline-block;
-      background-color: #0077cc;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      margin: 0.5rem;
-      transition: background 0.3s ease;
-    }
-
-    .download-cta a:hover {
-      background-color: #005fa3;
-    }
-
-    footer {
-      background-color: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .footer-content p {
-      font-size: 16px;
-      margin-bottom: 20px;
-      font-weight: 300;
-    }
-
-    .social-links {
-      margin-top: 15px;
-    }
-
-    .social-links a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Header & Navigation -->
+  <!-- Header -->
   <div class="small-banner">
-    <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html" class="nav-btn">Home</a></li>
-        <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-        <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-        <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-        <li><a href="white-paper.html" class="nav-btn active">White Paper</a></li>
-        <li><a href="resources.html" class="nav-btn">Resources</a></li>
-        <li><a href="contact.html" class="nav-btn">Contact</a></li>
-        <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-      </ul>
-    </nav>
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn active">White Paper</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
   </div>
 
   <!-- Banner -->
-  <div class="page-banner"></div>
+  <div class="page-banner" style="background-image: url('assets/images/white-paper-bannerimage.png');"></div>
 
-  <!-- Page Content -->
+  <!-- Main Content -->
   <main class="content">
     <h1>Strategic Cloud Transformation in South Africa</h1>
 
-    <div class="section">
+    <section class="section">
       <h2>Executive Summary</h2>
       <p>
         This white paper provides a structured, partner-enabled framework for navigating cloud transformation at scale.
         We explore the challenges South African enterprises face and outline a 6-phase approach to AWS migration,
         modernization, and workforce alignment — all under CoreCloud’s orchestrator model.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Core Transformation Lifecycle</h2>
-      <div class="diagram">
-        <img src="assets/images/corecloud-lifecycle-diagram.png" alt="CoreCloud 6-Phase Transformation Lifecycle" />
+      <div class="diagram" style="text-align: center;">
+        <img src="assets/images/corecloud-lifecycle-diagram.png" alt="Lifecycle Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Strategic Pillars</h2>
-      <div class="diagram">
-        <img src="assets/images/corecloud-pillars-diagram.png" alt="Core Pillars: Platform, Operations, Talent" />
+      <div class="diagram" style="text-align: center;">
+        <img src="assets/images/corecloud-pillars-diagram.png" alt="Pillars Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
       </div>
-    </div>
+    </section>
 
-    <div class="download-cta">
+    <div class="download-cta" style="text-align: center; margin-top: 3rem;">
       <h2>Download the Full White Paper</h2>
-      <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.docx" download>Download .DOCX</a>
-      <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.pdf" download>Download PDF</a>
+      <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.docx" download class="btn">Download .DOCX</a>
+      <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.pdf" download class="btn">Download PDF</a>
     </div>
   </main>
 
@@ -229,6 +79,7 @@
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
-          defer></script>
+          defer>
+  </script>
 </body>
 </html>
