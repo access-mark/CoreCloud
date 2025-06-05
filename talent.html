@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreCloud – Talent Placement</title>
+  <title>Talent Placement – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -15,12 +15,24 @@
 
     .small-banner {
       background-color: #fff;
+      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
       max-height: 150px;
       width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
     }
 
     nav a.nav-btn {
@@ -42,86 +54,36 @@
       background-image: url('assets/images/talent-bannerimage.png');
       background-size: cover;
       background-position: center;
-      position: relative;
-    }
-
-    .banner-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none !important;
-    }
-
-    .banner-overlay h1 {
-      color: #fff;
-      font-size: 3rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
     }
 
     .content {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
 
-    .content h2 {
-      color: #003366;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #333;
-      margin-bottom: 2rem;
-    }
-
-    .highlight-box {
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .highlight-box h3 {
-      margin-top: 0;
-      color: #0077cc;
-    }
-
-    .highlight-box ul {
-      padding-left: 1.2rem;
-    }
-
-    .highlight-box li {
-      margin-bottom: 0.5rem;
-    }
-
-    .cta-section {
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
       text-align: center;
-      margin-top: 4rem;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .cta-btn {
-      background-color: #0077cc;
-      color: white;
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section h2 {
+      color: #003366;
+      font-size: 1.6rem;
+    }
+
+    .section p {
       font-size: 1rem;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-
-    .cta-btn:hover {
-      background-color: #005fa3;
+      color: #444;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -130,8 +92,8 @@
   <div class="small-banner">
     <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav>
-        <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
+      <nav style="width: 100%;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
@@ -144,31 +106,31 @@
   </div>
 
   <!-- Hero Banner -->
-  <div class="page-banner">
-    <div class="banner-overlay">
-      <h1>Talent Placement</h1>
-    </div>
-  </div>
+  <div class="page-banner"></div>
 
   <!-- Page Content -->
-  <div class="content">
-    <h2>Precision Hiring. Strategic Partnership.</h2>
-    <p>CoreCloud connects top-tier talent with high-impact roles through a refined sourcing and delivery process powered by trusted partnerships. Whether you're scaling your cloud teams or augmenting leadership — we align capability to ambition.</p>
+  <main class="content">
+    <h1>Talent Placement</h1>
 
-    <div class="highlight-box">
-      <h3>Our Delivery Model</h3>
-      <ul>
-        <li>70/30 margin-split model with top sourcing partners like Careerweb</li>
-        <li>Placement as agents of Synthesis — white-label, fully integrated</li>
-        <li>End-to-end: sourcing, screening, interviewing, onboarding, feedback</li>
-        <li>Rapid response with pre-screened, verified talent</li>
-      </ul>
-    </div>
+    <section class="section">
+      <h2>Sourcing Excellence</h2>
+      <p>Through partnerships with Careerweb, we access one of South Africa's most extensive talent pools, sourcing high-performance professionals across IT, engineering, and digital roles.</p>
+    </section>
 
-    <div class="cta-section">
-      <p>Looking for talent now or building a bench for future scale?</p>
-      <a href="contact.html" class="cta-btn">Brief Us On Your Need</a>
-    </div>
-  </div>
+    <section class="section">
+      <h2>Screening & Alignment</h2>
+      <p>Our screening process includes deep technical validation, culture fit interviews, and role alignment—ensuring every shortlisted candidate is a strategic fit, not just a skills match.</p>
+    </section>
+
+    <section class="section">
+      <h2>Placement & Support</h2>
+      <p>We operate through our partner Synthesis, acting as an agent to provide seamless placement services with contractual flexibility, rapid onboarding, and post-placement support.</p>
+    </section>
+
+    <section class="section">
+      <h2>Partnership-Led Growth</h2>
+      <p>Our delivery model is based on long-term partnerships and shared outcomes, giving you talent that aligns with business results—not transactional placements.</p>
+    </section>
+  </main>
 </body>
 </html>
