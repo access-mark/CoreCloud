@@ -1,23 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact CoreCloud</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreCloud – Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
+
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
     .logo {
       max-height: 150px;
       width: auto;
     }
+
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
+    .page-banner {
+      height: 480px;
+      background-image: url('assets/images/contact-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-overlay h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #0077cc;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
       <nav>
-        <ul>
+        <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
@@ -29,24 +131,25 @@
     </header>
   </div>
 
-  <main class="content">
-    <h1 class="centered-title">Contact CoreCloud</h1>
-    <p class="intro">We're ready to engage. Fill out the form or reach us via email or LinkedIn for strategic collaboration.</p>
-
-    <div class="contact-form">
-      <form action="mailto:hello@corecloud.group" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <button type="submit" class="cta-btn">Send Message</button>
-      </form>
+  <!-- Hero Banner -->
+  <div class="page-banner">
+    <div class="banner-overlay">
+      <h1>Contact Us</h1>
     </div>
-  </main>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Let's Talk</h2>
+    <p>Whether you're looking for expert cloud guidance, sales acceleration, or top-tier talent — we're here to help. Drop us a message and one of our team members will get back to you within 24 hours.</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>
