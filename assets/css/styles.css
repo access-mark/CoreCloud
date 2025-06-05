@@ -11,12 +11,10 @@
       font-family: 'Segoe UI', Roboto, sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
-      padding-top: 180px; /* offset for fixed nav height */
     }
 
     .small-banner {
       background-color: #fff;
-      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
@@ -26,6 +24,7 @@
       top: 0;
       left: 0;
       z-index: 1000;
+      padding: 1rem 2rem;
     }
 
     .banner-header {
@@ -73,6 +72,7 @@
       background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
+      margin-top: 200px; /* makes room for the fixed header */
     }
 
     .content {
@@ -287,6 +287,5 @@
           domain="www.chatbase.co"
           defer>
   </script>
-
 </body>
 </html>
