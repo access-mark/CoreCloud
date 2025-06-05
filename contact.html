@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreCloud – Contact</title>
+  <title>Contact – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -15,12 +15,24 @@
 
     .small-banner {
       background-color: #fff;
+      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
       max-height: 150px;
       width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
     }
 
     nav a.nav-btn {
@@ -39,77 +51,65 @@
 
     .page-banner {
       height: 480px;
-      background-image: url('assets/images/contact-bannerimage.png');
+      background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
-      position: relative;
-    }
-
-    .banner-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none !important;
-    }
-
-    .banner-overlay h1 {
-      color: #fff;
-      font-size: 3rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
     }
 
     .content {
-      max-width: 800px;
+      max-width: 900px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
 
-    .content h2 {
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
       color: #003366;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #333;
-      margin-bottom: 2rem;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+      display: grid;
+      gap: 1rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
 
     input, textarea {
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      padding: 0.75rem;
       font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
 
-    button {
-      background: #0077cc;
-      color: white;
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      background-color: #0077cc;
+      color: #fff;
       font-weight: 600;
-      font-size: 1rem;
-      padding: 1rem;
+      padding: 0.75rem 1.5rem;
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background: #005fa3;
+    .submit-btn:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
@@ -118,8 +118,8 @@
   <div class="small-banner">
     <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav>
-        <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
+      <nav style="width: 100%;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
@@ -132,24 +132,28 @@
   </div>
 
   <!-- Hero Banner -->
-  <div class="page-banner">
-    <div class="banner-overlay">
-      <h1>Contact Us</h1>
-    </div>
-  </div>
+  <div class="page-banner"></div>
 
   <!-- Page Content -->
-  <div class="content">
-    <h2>Let's Talk</h2>
-    <p>Whether you're looking for expert cloud guidance, sales acceleration, or top-tier talent — we're here to help. Drop us a message and one of our team members will get back to you within 24 hours.</p>
-
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <main class="content">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" class="submit-btn">Send Message</button>
+      </div>
     </form>
-  </div>
+  </main>
 </body>
 </html>
