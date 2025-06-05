@@ -3,17 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreCloud Talent Placement</title>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
+
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
     .logo {
       max-height: 150px;
       width: auto;
     }
 
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
     .page-banner {
-      height: 300px;
-      background-image: url('assets/images/talent-bannerimage.png');
+      height: 480px;
+      background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
       position: relative;
@@ -22,8 +48,9 @@
     .banner-overlay {
       position: absolute;
       top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.45);
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -31,18 +58,20 @@
 
     .banner-overlay h1 {
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 700;
       text-align: center;
+      margin: 0;
     }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
       <nav>
-        <ul>
+        <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
@@ -54,40 +83,11 @@
     </header>
   </div>
 
+  <!-- Hero Banner -->
   <div class="page-banner">
     <div class="banner-overlay">
       <h1>Talent Placement</h1>
     </div>
   </div>
-
-  <main class="content">
-    <h2 class="centered-title">Elite Cloud & Digital Talent, Delivered</h2>
-    <p class="intro">We help you source, screen, and place top-tier talent via CoreCloud’s strategic partner network. From developers to architects and sales professionals, we deliver results.</p>
-
-    <section class="two-column">
-      <div>
-        <h3>Placement Services</h3>
-        <ul>
-          <li>Role scoping and profiling</li>
-          <li>Talent sourcing via Careerweb</li>
-          <li>Screening and interview coordination</li>
-          <li>Contract or permanent placement</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Powered by Partnership</h3>
-        <ul>
-          <li>Careerweb: sourcing & screening engine</li>
-          <li>Synthesis: cloud talent fulfilment</li>
-          <li>CoreCloud: contract and commercial agent</li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="centered">
-      <a href="downloads/CoreCloud_Talent_Placement_Guide.pdf" class="cta-btn">Download Talent Guide</a>
-      <a href="contact.html" class="cta-btn">Request Talent Now</a>
-    </div>
-  </main>
 </body>
 </html>
