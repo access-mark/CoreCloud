@@ -43,8 +43,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -111,6 +110,42 @@ main {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
+.section h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-top: 2rem;
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.diagram img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.download-cta .btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  margin: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.download-cta .btn:hover {
+  background-color: #005fa3;
+}
+
 /* Footer */
 footer {
   background-color: #003366;
@@ -152,16 +187,12 @@ footer {
   }
 
   nav ul {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .footer-content {
-    text-align: left;
-  }
-
+  .footer-content,
   .social-links {
-    text-align: left;
+    text-align: center;
   }
 }
