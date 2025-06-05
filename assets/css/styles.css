@@ -35,6 +35,7 @@ header .logo {
     margin-right: 50px;
 }
 
+/* Nav Styles with Underline Animation */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -56,19 +57,29 @@ nav ul li a {
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #333;
-    border-bottom: 2px solid #00FFFF;
-    text-shadow: 0 0 6px #00FFFF;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00FFFF;
+    transition: width 0.3s ease;
 }
 
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+nav ul li a:hover,
 nav ul li a.active {
-    font-weight: 700;
-    color: #00FFFF;
-    border-bottom: 2px solid #00FFFF;
+    color: #00e0ff;
+    font-weight: bold;
 }
 
 /* Main Content */
