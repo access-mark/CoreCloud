@@ -8,9 +8,9 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: transparent; /* Removed the block behind nav */
     color: white;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduced height of the nav block by 15% */
 }
 
 header .logo {
@@ -31,12 +31,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #00FFFF; /* Using site color */
     text-decoration: none; /* Remove underline from links */
     font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
+    background-color: #00FFFF; /* Light background color on hover */
+    color: #333; /* Dark text color on hover */
     font-weight: bold;
 }
 
