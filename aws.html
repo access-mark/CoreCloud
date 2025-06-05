@@ -63,6 +63,57 @@
       text-align: center;
       margin: 0;
     }
+
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .cta a {
+      background: #0077cc;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cta a:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -87,6 +138,35 @@
   <div class="page-banner">
     <div class="banner-overlay">
       <h1>AWS Service Suite</h1>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Migrate. Modernize. Manage. Optimize.</h2>
+    <p>CoreCloud delivers end-to-end AWS cloud solutions with speed, security, and precision. Through our ecosystem of certified AWS experts and delivery partners, we help organizations move faster, build smarter, and scale efficiently.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Cloud Migration</h3>
+        <p>We assess readiness, plan architecture, and execute full-stack migrations to AWS — reducing downtime, risk, and cost.</p>
+      </div>
+      <div class="card">
+        <h3>Application Modernization</h3>
+        <p>Transform legacy systems using containers, serverless, and cloud-native design patterns for performance and agility.</p>
+      </div>
+      <div class="card">
+        <h3>Managed Cloud Operations</h3>
+        <p>24/7 monitoring, patching, cost optimization, and compliance delivered via secure AWS landing zones.</p>
+      </div>
+      <div class="card">
+        <h3>FinOps & Optimization</h3>
+        <p>Gain visibility and control over cloud spend with continuous cost optimization and usage insights across your stack.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="contact.html">Start Your Cloud Journey</a>
     </div>
   </div>
 </body>
