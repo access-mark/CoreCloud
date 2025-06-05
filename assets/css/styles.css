@@ -1,161 +1,66 @@
-/* CoreCloud Executive Stylesheet */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="max-height: 150px;">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn active">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.6;
-}
+  <!-- Hero Banner -->
+  <div class="page-banner" style="background-image: url('assets/images/sandton-bannerimage.png');">
+    <div class="banner-overlay">
+      <h1>Build. Modernize. Scale.</h1>
+    </div>
+  </div>
 
-/* Banner & Navigation */
-.small-banner {
-  background: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 1.5rem 0;
-}
+  <!-- Main Content -->
+  <main class="homepage">
+    <section class="hero">
+      <p class="hero-subtitle" style="text-align:center; font-size:1.2rem;">
+        CoreCloud delivers strategic consulting, AWS cloud transformation, and high-performance talent to power growth.
+      </p>
+      <div class="centered" style="text-align:center;">
+        <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
+      </div>
+    </section>
 
-.banner-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    <section class="division-grid">
+      <div class="division-card">
+        <h2>CoreCloud Consulting</h2>
+        <p>Sales transformation, GTM acceleration, and executive-level advisory. Strategy meets execution.</p>
+        <a href="consulting.html" class="nav-btn">Explore Consulting →</a>
+      </div>
 
-.logo {
-  max-height: 150px;
-  width: auto;
-}
+      <div class="division-card">
+        <h2>CoreCloud AWS Service Suite</h2>
+        <p>Migrate, Modernize, Manage & Optimize with AWS-certified experts and ecosystem partners.</p>
+        <a href="aws.html" class="nav-btn">Explore AWS Services →</a>
+      </div>
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-btn {
-  text-decoration: none;
-  font-weight: 600;
-  color: #0072CE;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
-}
-
-.nav-btn:hover,
-.nav-btn.active {
-  color: #1a1a1a;
-}
-
-/* Main Content Styling */
-main.content, main.homepage {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-}
-
-.centered-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-.intro {
-  font-size: 1.2rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  color: #444;
-}
-
-/* CTA Buttons */
-.cta-btn {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.85rem 1.75rem;
-  font-weight: 600;
-  background-color: #0072CE;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 114, 206, 0.15);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.cta-btn:hover {
-  background-color: #005da3;
-  transform: translateY(-2px);
-}
-
-/* Two-Column Blocks */
-.two-column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.two-column div {
-  flex: 1 1 45%;
-  min-width: 280px;
-}
-
-/* Download List */
-.download-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.download-list li {
-  margin: 1.5rem 0;
-}
-
-/* Form Styling */
-.contact-form form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  padding: 1rem 2rem;
-  background-color: #0072CE;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #005da3;
-}
-
-/* Footer (optional future use) */
-footer {
-  background: #f0f0f0;
-  padding: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-}
+      <div class="division-card">
+        <h2>CoreCloud Talent Placement</h2>
+        <p>Elite professionals sourced, screened, and placed through strategic partnerships with Careerweb and Synthesis.</p>
+        <a href="talent.html" class="nav-btn">Explore Talent Solutions →</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
