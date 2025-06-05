@@ -14,11 +14,8 @@
     }
 
     .small-banner {
-      background-image: url('assets/images/white-paper-bannerimage.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 2rem 1.5rem;
+      background-color: #fff;
+      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
@@ -26,7 +23,7 @@
     }
 
     .logo {
-      max-height: 165px;
+      max-height: 150px;
       width: auto;
       margin-bottom: 1rem;
     }
@@ -53,6 +50,13 @@
     nav a.nav-btn.active {
       color: #005fa3;
       font-weight: bold;
+    }
+
+    .page-banner {
+      height: 480px;
+      background-image: url('assets/images/white-paper-bannerimage.png');
+      background-size: cover;
+      background-position: center;
     }
 
     .content {
@@ -92,7 +96,7 @@
     }
 
     .diagram img {
-      max-width: 700px;
+      max-width: 720px;
       width: 100%;
       height: auto;
       border-radius: 10px;
@@ -156,7 +160,7 @@
 </head>
 <body>
 
-  <!-- Banner with Logo & Nav -->
+  <!-- Header & Navigation -->
   <div class="small-banner">
     <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
     <nav>
@@ -172,6 +176,9 @@
       </ul>
     </nav>
   </div>
+
+  <!-- Banner -->
+  <div class="page-banner"></div>
 
   <!-- Page Content -->
   <main class="content">
@@ -223,7 +230,6 @@
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
-          defer>
-  </script>
+          defer></script>
 </body>
 </html>
