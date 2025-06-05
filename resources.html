@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreCloud – Resources</title>
+  <title>Resources – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -15,12 +15,24 @@
 
     .small-banner {
       background-color: #fff;
+      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
       max-height: 150px;
       width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
     }
 
     nav a.nav-btn {
@@ -39,48 +51,38 @@
 
     .page-banner {
       height: 480px;
-      background-image: url('assets/images/resources-bannerimage.png');
+      background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
-      position: relative;
-    }
-
-    .banner-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none !important;
-    }
-
-    .banner-overlay h1 {
-      color: #fff;
-      font-size: 3rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
     }
 
     .content {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
 
-    .resource-grid {
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .resources-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      margin-top: 2rem;
     }
 
     .resource-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      background: #fff;
       padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.2s ease;
     }
 
@@ -89,39 +91,28 @@
     }
 
     .resource-card h3 {
+      font-size: 1.3rem;
       color: #003366;
       margin-bottom: 0.5rem;
     }
 
     .resource-card p {
+      font-size: 0.95rem;
       color: #444;
       margin-bottom: 1rem;
     }
 
-    .resource-card a {
-      color: #0077cc;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .cta-section {
-      text-align: center;
-      margin-top: 4rem;
-    }
-
-    .cta-btn {
-      background-color: #0077cc;
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
+    .download-btn {
       display: inline-block;
-      transition: background 0.3s ease;
+      background-color: #0077cc;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
     }
 
-    .cta-btn:hover {
+    .download-btn:hover {
       background-color: #005fa3;
     }
   </style>
@@ -131,8 +122,8 @@
   <div class="small-banner">
     <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav>
-        <ul style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
+      <nav style="width: 100%;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
@@ -145,44 +136,37 @@
   </div>
 
   <!-- Hero Banner -->
-  <div class="page-banner">
-    <div class="banner-overlay">
-      <h1>Resource Library</h1>
-    </div>
-  </div>
+  <div class="page-banner"></div>
 
   <!-- Page Content -->
-  <div class="content">
-    <div class="resource-grid">
+  <main class="content">
+    <h1>Resources</h1>
+
+    <div class="resources-grid">
       <div class="resource-card">
-        <h3>CoreCloud Capability Deck</h3>
-        <p>Our full-service overview — consulting, AWS, and talent delivery in one master file.</p>
-        <a href="downloads/CapabilityDeck.pdf" download>Download PDF →</a>
+        <h3>CoreCloud Overview Deck</h3>
+        <p>A visual summary of our consulting, cloud, and talent services.</p>
+        <a href="assets/downloads/corecloud-overview.pdf" class="download-btn" download>Download PDF</a>
       </div>
 
       <div class="resource-card">
-        <h3>Consulting Services Pack</h3>
-        <p>Details on our consulting frameworks, use cases, and commercial models.</p>
-        <a href="downloads/ConsultingPack.pdf" download>Download PDF →</a>
+        <h3>Consulting Methodology</h3>
+        <p>Detailed walkthrough of our consultative sales and GTM acceleration framework.</p>
+        <a href="assets/downloads/consulting-methodology.pdf" class="download-btn" download>Download PDF</a>
       </div>
 
       <div class="resource-card">
-        <h3>AWS Services Guide</h3>
-        <p>Our approach to migrate, modernize, manage & optimize using AWS best practice.</p>
-        <a href="downloads/AWSGuide.pdf" download>Download PDF →</a>
+        <h3>AWS Partner Services</h3>
+        <p>Capabilities, case studies, and partner model for cloud transformation.</p>
+        <a href="assets/downloads/aws-partner-services.pdf" class="download-btn" download>Download PDF</a>
       </div>
 
       <div class="resource-card">
-        <h3>Talent Sourcing Toolkit</h3>
-        <p>End-to-end view of our sourcing, screening, onboarding and partner-driven model.</p>
-        <a href="downloads/TalentToolkit.pdf" download>Download PDF →</a>
+        <h3>Talent Placement Model</h3>
+        <p>Overview of how we source, screen, place, and support top-tier professionals.</p>
+        <a href="assets/downloads/talent-model.pdf" class="download-btn" download>Download PDF</a>
       </div>
     </div>
-
-    <div class="cta-section">
-      <p>Need something custom? Ask us for the full toolkit, presentation decks, or compliance docs.</p>
-      <a href="contact.html" class="cta-btn">Request Full Toolkit</a>
-    </div>
-  </div>
+  </main>
 </body>
 </html>
