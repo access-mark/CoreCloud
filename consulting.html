@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulting – CoreCloud</title>
+  <title>Testimonials – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
@@ -51,7 +51,7 @@
 
     .page-banner {
       height: 480px;
-      background-image: url('assets/images/consulting-bannerimage.png');
+      background-image: url('assets/images/testimonials-bannerimage.png');
       background-size: cover;
       background-position: center;
     }
@@ -91,35 +91,84 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
-    .card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #222;
+    .card p {
+      font-size: 1.1rem;
+      color: #333;
     }
 
-    .card p {
-      font-size: 1rem;
-      color: #555;
+    .card .testimonial-author {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .download-cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .download-cta a {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .download-cta a:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #00FFFF;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
+    <header class="banner-header" style="display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
       <nav style="width: 100%;">
-        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
-  <li><a href="index.html" class="nav-btn">Home</a></li>
-  <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-  <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-  <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-  <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
-  <li><a href="resources.html" class="nav-btn">Resources</a></li>
-  <li><a href="contact.html" class="nav-btn">Contact</a></li>
-  <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-</ul>
-
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0;">
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
       </nav>
     </header>
   </div>
@@ -129,50 +178,46 @@
 
   <!-- Page Content -->
   <main class="content">
-    <h1>Consulting</h1>
+    <h1>What Our Clients Say</h1>
+
     <div class="card-grid">
       <div class="card">
-        <h2>Strategic Sales Advisory</h2>
-        <p>High-level advisory to define vision, accelerate GTM plans, and close the strategy-to-execution gap. We help you shape initiatives that outperform expectations.</p>
+        <p>“CoreCloud helped us transition smoothly to AWS and modernize our operations. Their consultative approach and strategic partners were game-changers.”</p>
+        <p class="testimonial-author">– Sipho M., CIO, FinTech Group</p>
       </div>
+
       <div class="card">
-        <h2>Sales Team Assessment</h2>
-        <p>We evaluate your structure, incentive models, team performance, and enablement practices. Our framework maps capability against ambition, revealing clear growth paths.</p>
+        <p>“Brilliant service and world-class talent. CoreCloud placed our DevOps lead within 10 days and stayed engaged through the onboarding process.”</p>
+        <p class="testimonial-author">– Anita R., Head of Engineering, HealthTech SA</p>
       </div>
+
       <div class="card">
-        <h2>Pipeline & Forecasting Precision</h2>
-        <p>Build predictable, repeatable, and scalable sales processes. Our models enhance pipeline velocity, win rates, and forecasting integrity.</p>
+        <p>“Their deep cloud expertise and partner network gave us confidence. Highly recommended for mid-market digital transformation.”</p>
+        <p class="testimonial-author">– Johan V., CTO, AutoNet Africa</p>
       </div>
-      <div class="card">
-        <h2>Sales Methodology Implementation</h2>
-        <p>We install battle-tested methods—from MEDDIC to Challenger—to improve qualification, shorten cycles, and empower reps with repeatable frameworks.</p>
-      </div>
-      <div class="card">
-        <h2>Executive-Level Engagement</h2>
-        <p>Trusted guidance for C-levels and boards. We support transformation agendas and commercial growth with discretion and strategic clarity.</p>
-      </div>
-      <div class="card">
-        <h2>Channel & Partner Acceleration</h2>
-        <p>Maximize ecosystem leverage with GTM orchestration, enablement journeys, and partner program refinement.</p>
-      </div>
+    </div>
+
+    <div class="download-cta">
+      <a href="testimonial-form.html">Submit a Testimonial</a>
     </div>
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin" title="LinkedIn">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" class="social-icon twitter" title="Twitter">Twitter</a>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook">Facebook</a>
-        </div>
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
     </div>
-</footer>
-<!-- CoreCloud Chatbot -->
-<script src="https://www.chatbase.co/embed.min.js"
-        chatbotId="2lVQDE6W7igyTrTHXu9Wk"
-        domain="www.chatbase.co"
-        defer>
-</script>
+  </footer>
 
+  <!-- CoreCloud Chatbot -->
+  <script src="https://www.chatbase.co/embed.min.js"
+          chatbotId="2lVQDE6W7igyTrTHXu9Wk"
+          domain="www.chatbase.co"
+          defer></script>
 </body>
 </html>
