@@ -12,7 +12,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: transparent; /* Remove background behind nav */
+    background-color: transparent;
     color: white;
     padding: 20px 0; /* Height of the header */
     display: flex;
@@ -28,17 +28,19 @@ header .header-content {
     width: 100%;
 }
 
+/* Logo Styles */
 header .logo {
     height: 200px; /* Increased logo height to 200px */
     margin-right: 50px; /* Space between logo and nav */
 }
 
+/* Navigation Styling */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; /* Center the nav items horizontally */
 }
 
 nav ul li {
@@ -68,7 +70,7 @@ main {
     flex-grow: 1; /* Ensure main content area expands to fill space */
 }
 
-/* Simple Footer Styling */
+/* Footer Styling */
 footer {
     background-color: #003366; /* Dark blue background */
     color: #fff;
