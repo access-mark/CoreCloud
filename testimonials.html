@@ -13,9 +13,24 @@
       height: 480px;
     }
 
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
     .testimonial-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      display: flex;
+      flex-direction: column;
       gap: 2rem;
     }
 
@@ -23,10 +38,7 @@
       background: #fff;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .testimonial-text {
@@ -45,39 +57,26 @@
       margin-top: 4rem;
     }
 
-    .download-cta .btn {
+    .download-cta a {
       background-color: #0077cc;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
-    .download-cta .btn:hover {
+    .download-cta a:hover {
       background-color: #005fa3;
-    }
-
-    nav ul li a {
-      color: #003366;
-    }
-
-    nav ul li a:hover {
-      color: #005fa3;
-    }
-
-    nav ul li a.active {
-      font-weight: bold;
-      color: #005fa3;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
   <div class="small-banner">
-    <header class="banner-header" style="max-width: 1200px; margin: 0 auto;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+    <header class="banner-header" style="display: flex; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto;">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="height: 220px; margin-right: 50px;" />
       <nav>
         <ul>
           <li><a href="index.html" class="nav-btn">Home</a></li>
@@ -86,8 +85,8 @@
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
           <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
-          <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
           <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
         </ul>
       </nav>
     </header>
@@ -97,8 +96,8 @@
   <div class="page-banner"></div>
 
   <!-- Main Content -->
-  <main class="content" style="max-width: 1200px; margin: 4rem auto; padding: 0 1.5rem;">
-    <h1 style="font-size: 3rem; font-weight: 700; text-align: center; color: #003366; margin-bottom: 3rem;">What Our Clients Say</h1>
+  <main class="content">
+    <h1>What Our Clients Say</h1>
 
     <div class="testimonial-container">
       <div class="testimonial-card">
@@ -118,7 +117,7 @@
     </div>
 
     <div class="download-cta">
-      <a href="testimonial-form.html" class="btn">Submit a Testimonial</a>
+      <a href="testimonial-form.html">Submit a Testimonial</a>
     </div>
   </main>
 
