@@ -8,14 +8,17 @@ body {
 
 /* Header Styles */
 header {
-    background-color: transparent; /* Removed the block behind nav */
+    background-color: transparent; /* Remove background behind nav */
     color: white;
     padding: 5px 0; /* Reduced height of the nav block by 15% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
-    width: 150px;
-    margin-left: 20px;
+    height: 110px; /* Increased logo height by 10% */
+    margin-right: 20px;
 }
 
 nav ul {
@@ -26,24 +29,26 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #00FFFF; /* Using site color */
-    text-decoration: none; /* Remove underline from links */
+    color: #00FFFF; /* Site color for links */
+    text-decoration: none; /* Remove underline */
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: #333; /* Dark background for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px; /* Rounded buttons */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Soft glow effect */
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #00FFFF; /* Light background color on hover */
-    color: #333; /* Dark text color on hover */
+    background-color: #00FFFF; /* Light background on hover */
+    color: #333; /* Dark text on hover */
     font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.5); /* Enhanced glow effect */
 }
 
 /* Main Content */
@@ -107,7 +112,7 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header .logo {
-        width: 120px;
+        height: 100px;
     }
 
     nav ul li {
