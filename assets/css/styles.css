@@ -43,7 +43,8 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 nav ul li {
@@ -60,6 +61,7 @@ nav ul li a {
   letter-spacing: 1px;
   position: relative;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 nav ul li a::after {
@@ -150,8 +152,7 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
 
   .footer-content {
