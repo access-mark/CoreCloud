@@ -70,16 +70,66 @@ main {
 
 /* Simple Footer Styling */
 footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #00FFFF, #333); /* Gradient background */
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
     margin-top: auto; /* Push footer to the bottom of the page */
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 300; /* Lighter text */
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #333; /* Cyan color on hover */
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 24px; /* Larger icon size */
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover .social-icon {
+    transform: scale(1.2); /* Slightly enlarge the icons on hover */
+}
+
+.social-icon.linkedin:before {
+    content: "\f08c"; /* LinkedIn icon */
+    font-family: 'FontAwesome';
+}
+
+.social-icon.twitter:before {
+    content: "\f099"; /* Twitter icon */
+    font-family: 'FontAwesome';
+}
+
+.social-icon.facebook:before {
+    content: "\f09a"; /* Facebook icon */
+    font-family: 'FontAwesome';
 }
 
 /* Responsive Styles */
