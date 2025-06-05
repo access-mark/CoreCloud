@@ -50,10 +50,10 @@
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
       display: flex;
       align-items: center;
       justify-content: center;
+      background: none !important;
     }
 
     .banner-overlay h1 {
@@ -65,7 +65,7 @@
     }
 
     .content {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
@@ -80,39 +80,48 @@
       font-size: 1.1rem;
       line-height: 1.6;
       color: #333;
+      margin-bottom: 2rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
+    .highlight-box {
+      background-color: #ffffff;
       padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
-    .cta {
+    .highlight-box h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    .highlight-box ul {
+      padding-left: 1.2rem;
+    }
+
+    .highlight-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-section {
       text-align: center;
       margin-top: 4rem;
     }
 
-    .cta a {
-      background: #0077cc;
+    .cta-btn {
+      background-color: #0077cc;
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      text-decoration: none;
+      font-size: 1rem;
       font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
     }
 
-    .cta a:hover {
-      background: #005fa3;
+    .cta-btn:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
@@ -143,30 +152,22 @@
 
   <!-- Page Content -->
   <div class="content">
-    <h2>Elite Talent. Strategic Delivery.</h2>
-    <p>We match top-tier professionals with high-impact roles in cloud, data, and digital transformation. Through our strategic partnerships with Careerweb and Synthesis, we access deep pools of vetted candidates and provide end-to-end placement services with speed and precision.</p>
+    <h2>Precision Hiring. Strategic Partnership.</h2>
+    <p>CoreCloud connects top-tier talent with high-impact roles through a refined sourcing and delivery process powered by trusted partnerships. Whether you're scaling your cloud teams or augmenting leadership — we align capability to ambition.</p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Specialist Sourcing</h3>
-        <p>Access vetted experts in AWS, DevOps, architecture, data engineering, and more through our curated partner network.</p>
-      </div>
-      <div class="card">
-        <h3>Client-Led Engagements</h3>
-        <p>We tailor every placement to your business context and team dynamics — not just role descriptions.</p>
-      </div>
-      <div class="card">
-        <h3>Speed & Accuracy</h3>
-        <p>Accelerated turnaround with rigorous screening ensures you meet top talent before your competitors do.</p>
-      </div>
-      <div class="card">
-        <h3>Partnership Model</h3>
-        <p>Flexible engagement structures, fair profit-sharing, and full transparency at every stage of the process.</p>
-      </div>
+    <div class="highlight-box">
+      <h3>Our Delivery Model</h3>
+      <ul>
+        <li>70/30 margin-split model with top sourcing partners like Careerweb</li>
+        <li>Placement as agents of Synthesis — white-label, fully integrated</li>
+        <li>End-to-end: sourcing, screening, interviewing, onboarding, feedback</li>
+        <li>Rapid response with pre-screened, verified talent</li>
+      </ul>
     </div>
 
-    <div class="cta">
-      <a href="contact.html">Request Talent</a>
+    <div class="cta-section">
+      <p>Looking for talent now or building a bench for future scale?</p>
+      <a href="contact.html" class="cta-btn">Brief Us On Your Need</a>
     </div>
   </div>
 </body>
