@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – CoreCloud</title>
+  <title>CoreCloud – Build. Modernize. Scale.</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
@@ -16,7 +16,7 @@
 
     /* Navigation Bar Style */
     .small-banner {
-      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%); /* White to Blue gradient */
+      background-color: #fff; /* White background */
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -49,18 +49,20 @@
 
     nav a.nav-btn {
       text-decoration: none;
-      font-weight: 700;
-      color: #fff; /* White text */
+      font-weight: 600;
+      color: #0077cc; /* Blue color for nav links */
       padding: 0.5rem 0.75rem;
       font-size: 1.1rem;
       position: relative;
-      transition: color 0.3s ease, transform 0.3s ease;
+      transition: color 0.3s ease, font-size 0.3s ease;
     }
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
-      color: #00ff99; /* Techy green for hover effect */
-      transform: scale(1.1); /* Slight scale up effect */
+      color: #005fa3; /* Dark blue on hover */
+      font-weight: bold; /* Bold effect on hover */
+      font-size: 1.2rem; /* Increased font size on hover */
+      text-decoration: none; /* No underline on hover */
     }
 
     nav a.nav-btn::after {
@@ -68,14 +70,15 @@
       position: absolute;
       width: 0;
       height: 2px;
-      background-color: #00ff99; /* Green underline effect */
+      background-color: #0077cc; /* Blue underline effect */
       bottom: 0;
       left: 50%;
       transition: width 0.3s ease, left 0.3s ease;
     }
 
-    nav a.nav-btn:hover::after {
-      width: 100%; /* Underline expands on hover */
+    nav a.nav-btn:hover::after,
+    nav a.nav-btn.active::after {
+      width: 100%; /* Underline expands on hover or when active */
       left: 0;
     }
 
