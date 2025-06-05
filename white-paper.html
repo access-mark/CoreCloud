@@ -14,8 +14,11 @@
     }
 
     .small-banner {
-      background-color: #fff;
-      padding: 0.8rem 2rem;
+      background-image: url('assets/images/white-paper-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 2rem 1.5rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
@@ -23,7 +26,7 @@
     }
 
     .logo {
-      max-height: 150px;
+      max-height: 165px;
       width: auto;
       margin-bottom: 1rem;
     }
@@ -50,15 +53,6 @@
     nav a.nav-btn.active {
       color: #005fa3;
       font-weight: bold;
-    }
-
-    .page-banner {
-      height: 480px;
-      background-image: url('assets/images/white-paper-bannerimage.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-bottom: 0;
     }
 
     .content {
@@ -162,27 +156,22 @@
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- Banner with Logo & Nav -->
   <div class="small-banner">
-    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
-      <nav style="width: 100%;">
-        <ul>
-          <li><a href="index.html" class="nav-btn">Home</a></li>
-          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-          <li><a href="white-paper.html" class="nav-btn active">White Paper</a></li>
-          <li><a href="resources.html" class="nav-btn">Resources</a></li>
-          <li><a href="contact.html" class="nav-btn">Contact</a></li>
-          <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-        </ul>
-      </nav>
-    </header>
+    <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Home</a></li>
+        <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+        <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+        <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+        <li><a href="white-paper.html" class="nav-btn active">White Paper</a></li>
+        <li><a href="resources.html" class="nav-btn">Resources</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <!-- Hero Banner -->
-  <div class="page-banner"></div>
 
   <!-- Page Content -->
   <main class="content">
@@ -230,7 +219,7 @@
     </div>
   </footer>
 
-  <!-- CoreCloud Chatbot -->
+  <!-- Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
