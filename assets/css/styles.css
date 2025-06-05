@@ -18,29 +18,29 @@ header {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center;
+    width: 100%; /* Ensure header fills the width of the viewport */
 }
 
 header .header-content {
     display: flex;
     flex-direction: row; /* Align items in a row */
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; /* Center content horizontally within the header */
     align-items: center; /* Align items vertically */
-    width: 100%;
+    width: 100%; /* Ensure header-content uses the full width */
+    max-width: 1200px; /* Optional: limits the width of the content */
 }
 
-/* Logo Styles */
 header .logo {
     height: 200px; /* Increased logo height to 200px */
     margin-right: 50px; /* Space between logo and nav */
 }
 
-/* Navigation Styling */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items horizontally */
+    justify-content: center; /* Center the nav items horizontally within the header */
 }
 
 nav ul li {
@@ -70,7 +70,7 @@ main {
     flex-grow: 1; /* Ensure main content area expands to fill space */
 }
 
-/* Footer Styling */
+/* Simple Footer Styling */
 footer {
     background-color: #003366; /* Dark blue background */
     color: #fff;
