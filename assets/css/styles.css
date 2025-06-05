@@ -50,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #00FFFF;
+  color: #003366;
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
@@ -68,7 +68,7 @@ nav ul li a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #00FFFF;
+  background-color: #003366;
   transition: width 0.3s ease;
 }
 
@@ -78,12 +78,12 @@ nav ul li a.active::after {
 }
 
 nav ul li a:hover {
-  color: #00e0ff;
+  color: #001f3f;
 }
 
 nav ul li a.active {
   font-weight: bold;
-  color: #00e0ff;
+  color: #001f3f;
 }
 
 /* Page Banner */
