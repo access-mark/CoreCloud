@@ -5,32 +5,29 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 /* Header Styles */
 header {
+    background-color: transparent; /* Remove background behind nav */
+    color: white;
+    padding: 20px 0; /* Height of the header */
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    width: 100%;
-    padding: 20px 0;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
 }
 
 header .header-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Align items vertically */
+    width: 100%;
 }
 
 header .logo {
     height: 200px; /* Increased logo height to 200px */
-    margin-bottom: 20px; /* Space between logo and navigation */
+    margin-right: 50px; /* Space between logo and nav */
 }
 
 nav ul {
@@ -38,7 +35,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centers the nav items */
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
