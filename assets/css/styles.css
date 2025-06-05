@@ -68,58 +68,18 @@ main {
     flex-grow: 1; /* Ensure main content area expands to fill space */
 }
 
-/* Footer Styling */
+/* Simple Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
     margin-top: auto; /* Push footer to the bottom of the page */
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-content p {
+footer p {
+    margin: 0;
     font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-.social-icon {
-    font-size: 20px; /* Icon size */
-}
-
-/* Optional: Add icons or font-awesome for better social links styling */
-.social-icon.linkedin:before {
-    content: "\f08c"; /* LinkedIn icon */
-    font-family: 'FontAwesome';
-}
-
-.social-icon.twitter:before {
-    content: "\f099"; /* Twitter icon */
-    font-family: 'FontAwesome';
-}
-
-.social-icon.facebook:before {
-    content: "\f09a"; /* Facebook icon */
-    font-family: 'FontAwesome';
 }
 
 /* Responsive Styles */
