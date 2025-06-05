@@ -11,30 +11,35 @@
       font-family: 'Segoe UI', Roboto, sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
-      padding-top: 160px; /* Ensures content starts below fixed nav */
+      padding-top: 180px; /* offset for fixed nav height */
     }
 
     .small-banner {
       background-color: #fff;
+      padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
       align-items: center;
       position: fixed;
-      top: 0;
       width: 100%;
-      z-index: 999;
-      padding: 1rem 2rem;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
     }
 
     .logo {
       max-height: 120px;
       width: auto;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      width: 100%;
+      margin-bottom: 1rem;
     }
 
     nav ul {
@@ -42,25 +47,19 @@
       display: flex;
       justify-content: center;
       gap: 1.2rem;
-      margin: 0;
       padding: 0;
+      margin: 0;
       flex-wrap: nowrap;
-      overflow-x: hidden;
-    }
-
-    nav ul li {
-      display: inline;
     }
 
     nav a.nav-btn {
       text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
+      font-weight: 600;
       color: #0077cc;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 0.4rem 0.6rem;
-      transition: all 0.3s ease;
+      font-size: 16px;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a.nav-btn:hover,
@@ -157,6 +156,10 @@
       text-decoration: underline;
     }
 
+    .centered {
+      text-align: center;
+    }
+
     footer {
       background-color: #003366;
       color: #fff;
@@ -199,20 +202,25 @@
         flex-wrap: wrap;
       }
 
-      .hero-subtitle {
-        font-size: 1.1rem;
+      .footer-content {
+        text-align: left;
+      }
+
+      .social-links {
+        text-align: left;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Fixed Nav Block -->
+
+  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-btn active">Home</a></li>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
@@ -231,12 +239,14 @@
   <!-- Page Content -->
   <main class="content">
     <h1>Build. Modernize. Scale.</h1>
-    <p class="hero-subtitle">
-      CoreCloud delivers strategic consulting, AWS cloud transformation, and high-performance talent to power growth.
-    </p>
-    <div class="centered">
-      <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
-    </div>
+    <section class="hero">
+      <p class="hero-subtitle">
+        CoreCloud delivers strategic consulting, AWS cloud transformation, and high-performance talent to power growth.
+      </p>
+      <div class="centered">
+        <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
+      </div>
+    </section>
 
     <section class="division-grid">
       <div class="division-card">
@@ -262,19 +272,21 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      </div>
+        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
     </div>
   </footer>
 
-  <!-- Chatbot -->
+  <!-- CoreCloud Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
-          defer></script>
+          defer>
+  </script>
+
 </body>
 </html>
