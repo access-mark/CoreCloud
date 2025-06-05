@@ -19,7 +19,7 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* Logo aligned to left */
+      justify-content: space-between; /* Ensure space between logo and nav */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -37,6 +37,7 @@
       gap: 1.5rem;
       padding: 0;
       margin: 0;
+      justify-content: center; /* Center navigation links */
     }
 
     nav a.nav-btn {
@@ -120,10 +121,10 @@
 <body>
   <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header" style="text-align: left; display: flex; flex-direction: row; align-items: center; padding: 1rem 0;">
+    <header class="banner-header" style="display: flex; align-items: center; padding: 1rem 0; width: 100%;">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
       <nav style="width: 100%;">
-        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
+        <ul>
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
