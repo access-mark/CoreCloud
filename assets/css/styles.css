@@ -7,32 +7,32 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+    min-height: 100vh;
 }
 
 /* Header Styles */
 header {
     background-color: transparent;
     color: white;
-    padding: 20px 0; /* Height of the header */
+    padding: 20px 0;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure header fills the width of the viewport */
+    width: 100%;
 }
 
 header .header-content {
     display: flex;
-    flex-direction: row; /* Align items in a row */
-    justify-content: center; /* Center content horizontally within the header */
-    align-items: center; /* Align items vertically */
-    width: 100%; /* Ensure header-content uses the full width */
-    max-width: 1200px; /* Optional: limits the width of the content */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 header .logo {
-    height: 200px; /* Increased logo height to 200px */
-    margin-right: 50px; /* Space between logo and nav */
+    height: 200px;
+    margin-right: 50px;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items horizontally within the header */
+    justify-content: center;
 }
 
 nav ul li {
@@ -48,36 +48,43 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00FFFF; /* Cyan color for nav links */
-    text-decoration: none; /* Remove underline from links */
+    color: #00FFFF;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     padding: 5px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #333; /* Dark color on hover */
-    border-bottom: 2px solid #00FFFF; /* Subtle underline effect */
+    color: #333;
+    border-bottom: 2px solid #00FFFF;
+    text-shadow: 0 0 6px #00FFFF;
+}
+
+nav ul li a.active {
+    font-weight: 700;
+    color: #00FFFF;
+    border-bottom: 2px solid #00FFFF;
 }
 
 /* Main Content */
 main {
     padding: 20px;
-    flex-grow: 1; /* Ensure main content area expands to fill space */
+    flex-grow: 1;
 }
 
-/* Simple Footer Styling */
+/* Footer Styling */
 footer {
-    background-color: #003366; /* Dark blue background */
+    background-color: #003366;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-    margin-top: auto; /* Push footer to the bottom of the page */
+    margin-top: auto;
 }
 
 .footer-content {
@@ -89,7 +96,7 @@ footer {
 .footer-content p {
     font-size: 16px;
     margin-bottom: 20px;
-    font-weight: 300; /* Lighter text */
+    font-weight: 300;
 }
 
 .social-links {
@@ -106,42 +113,42 @@ footer {
 }
 
 .social-links a:hover {
-    color: #00FFFF; /* Cyan color on hover */
+    color: #00FFFF;
     text-decoration: underline;
 }
 
 .social-icon {
-    font-size: 24px; /* Larger icon size */
+    font-size: 24px;
     transition: transform 0.3s ease;
 }
 
 .social-links a:hover .social-icon {
-    transform: scale(1.2); /* Slightly enlarge the icons on hover */
+    transform: scale(1.2);
 }
 
 .social-icon.linkedin:before {
-    content: "\f08c"; /* LinkedIn icon */
+    content: "\f08c";
     font-family: 'FontAwesome';
 }
 
 .social-icon.twitter:before {
-    content: "\f099"; /* Twitter icon */
+    content: "\f099";
     font-family: 'FontAwesome';
 }
 
 .social-icon.facebook:before {
-    content: "\f09a"; /* Facebook icon */
+    content: "\f09a";
     font-family: 'FontAwesome';
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header .logo {
-        height: 150px; /* Adjust logo height for smaller screens */
+        height: 150px;
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav items vertically on mobile */
+        flex-direction: column;
         text-align: left;
     }
 
