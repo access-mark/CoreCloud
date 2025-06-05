@@ -11,15 +11,14 @@ body {
 header {
     background-color: transparent; /* Remove background behind nav */
     color: white;
-    padding: 5px 0; /* Reduced height of the nav block */
+    padding: 5px 20px; /* Reduced height of the nav block */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; /* Adding padding for spacing */
 }
 
 header .logo {
-    height: 150px; /* Increased logo height to 150px */
+    height: 175px; /* Increased logo height to 175px */
     margin-left: auto; /* Move logo to the far right */
 }
 
@@ -113,7 +112,7 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header .logo {
-        height: 130px; /* Adjust logo height for smaller screens */
+        height: 150px; /* Adjust logo height for smaller screens */
     }
 
     nav ul {
