@@ -6,41 +6,90 @@
   <title>CoreCloud – Build. Modernize. Scale.</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
-    .logo {
-      max-height: 150px;
-      width: auto;
+    .homepage {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .page-banner {
-      height: 300px;
-      background-image: url('assets/images/sandton-bannerimage.png');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-
-    .banner-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.45);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .banner-overlay h1 {
-      color: #fff;
-      font-size: 2.5rem;
-      font-weight: 700;
+    .hero-title {
       text-align: center;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    .hero-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 0.8rem;
+      color: #444;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin: 1.5rem auto;
+      padding: 0.9rem 2rem;
+      background-color: #0077cc;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #005fa3;
+    }
+
+    .division-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .division-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .division-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .division-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .division-card .nav-btn {
+      font-weight: 600;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .division-card .nav-btn:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <!-- Top Nav -->
   <div class="small-banner">
     <header class="banner-header">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="max-height: 150px;">
       <nav>
         <ul>
           <li><a href="index.html" class="nav-btn active">Home</a></li>
@@ -54,18 +103,20 @@
     </header>
   </div>
 
-  <div class="page-banner">
+  <!-- Hero Banner -->
+  <div class="page-banner" style="background-image: url('assets/images/sandton-bannerimage.png');">
     <div class="banner-overlay">
       <h1>Build. Modernize. Scale.</h1>
     </div>
   </div>
 
+  <!-- Homepage Content -->
   <main class="homepage">
     <section class="hero">
-      <p class="hero-subtitle" style="text-align:center; font-size:1.2rem;">
+      <p class="hero-subtitle">
         CoreCloud delivers strategic consulting, AWS cloud transformation, and high-performance talent to power growth.
       </p>
-      <div class="centered">
+      <div class="centered" style="text-align:center;">
         <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
       </div>
     </section>
@@ -74,19 +125,19 @@
       <div class="division-card">
         <h2>CoreCloud Consulting</h2>
         <p>Sales transformation, GTM acceleration, and executive-level advisory. Strategy meets execution.</p>
-        <a href="consulting.html" class="nav-btn">Explore Consulting</a>
+        <a href="consulting.html" class="nav-btn">Explore Consulting →</a>
       </div>
 
       <div class="division-card">
         <h2>CoreCloud AWS Service Suite</h2>
-        <p>Migrate, Modernize, Manage & Optimize with AWS experts and ecosystem partners.</p>
-        <a href="aws.html" class="nav-btn">Explore AWS Services</a>
+        <p>Migrate, Modernize, Manage & Optimize with AWS-certified experts and ecosystem partners.</p>
+        <a href="aws.html" class="nav-btn">Explore AWS Services →</a>
       </div>
 
       <div class="division-card">
         <h2>CoreCloud Talent Placement</h2>
         <p>Elite professionals sourced, screened, and placed through strategic partnerships with Careerweb and Synthesis.</p>
-        <a href="talent.html" class="nav-btn">Explore Talent Solutions</a>
+        <a href="talent.html" class="nav-btn">Explore Talent Solutions →</a>
       </div>
     </section>
   </main>
