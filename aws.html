@@ -50,10 +50,10 @@
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
       display: flex;
       align-items: center;
       justify-content: center;
+      background: none !important;
     }
 
     .banner-overlay h1 {
@@ -65,7 +65,7 @@
     }
 
     .content {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
@@ -80,39 +80,48 @@
       font-size: 1.1rem;
       line-height: 1.6;
       color: #333;
+      margin-bottom: 2rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
+    .highlight-box {
+      background-color: #ffffff;
       padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
-    .cta {
+    .highlight-box h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    .highlight-box ul {
+      padding-left: 1.2rem;
+    }
+
+    .highlight-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-section {
       text-align: center;
       margin-top: 4rem;
     }
 
-    .cta a {
-      background: #0077cc;
+    .cta-btn {
+      background-color: #0077cc;
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      text-decoration: none;
+      font-size: 1rem;
       font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
     }
 
-    .cta a:hover {
-      background: #005fa3;
+    .cta-btn:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
@@ -144,29 +153,22 @@
   <!-- Page Content -->
   <div class="content">
     <h2>Migrate. Modernize. Manage. Optimize.</h2>
-    <p>CoreCloud delivers end-to-end AWS cloud solutions with speed, security, and precision. Through our ecosystem of certified AWS experts and delivery partners, we help organizations move faster, build smarter, and scale efficiently.</p>
+    <p>CoreCloud partners with AWS-certified experts and ecosystem leaders to orchestrate powerful cloud outcomes. From initial migration to continuous optimization — our clients scale faster, smarter, and more securely.</p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Cloud Migration</h3>
-        <p>We assess readiness, plan architecture, and execute full-stack migrations to AWS — reducing downtime, risk, and cost.</p>
-      </div>
-      <div class="card">
-        <h3>Application Modernization</h3>
-        <p>Transform legacy systems using containers, serverless, and cloud-native design patterns for performance and agility.</p>
-      </div>
-      <div class="card">
-        <h3>Managed Cloud Operations</h3>
-        <p>24/7 monitoring, patching, cost optimization, and compliance delivered via secure AWS landing zones.</p>
-      </div>
-      <div class="card">
-        <h3>FinOps & Optimization</h3>
-        <p>Gain visibility and control over cloud spend with continuous cost optimization and usage insights across your stack.</p>
-      </div>
+    <div class="highlight-box">
+      <h3>End-to-End AWS Capability</h3>
+      <ul>
+        <li>Cloud Readiness & Migration Planning</li>
+        <li>Re-platforming, Re-architecting & Containerization</li>
+        <li>CloudOps, FinOps, and Compliance Automation</li>
+        <li>Security, Observability & Cost Optimization</li>
+        <li>Delivery via partners including LSD, Synthesis, DVT & more</li>
+      </ul>
     </div>
 
-    <div class="cta">
-      <a href="contact.html">Start Your Cloud Journey</a>
+    <div class="cta-section">
+      <p>Ready to unlock AWS efficiency and scalability?</p>
+      <a href="contact.html" class="cta-btn">Book Your Cloud Assessment</a>
     </div>
   </div>
 </body>
