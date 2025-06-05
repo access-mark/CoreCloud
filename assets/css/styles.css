@@ -152,7 +152,9 @@ footer {
   }
 
   nav ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: start;
   }
 
   .footer-content {
