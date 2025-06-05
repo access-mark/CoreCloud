@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoreCloud – Build. Modernize. Scale.</title>
+  <title>Contact Us – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
@@ -16,7 +16,7 @@
 
     /* Navigation Bar Style */
     .small-banner {
-      background: linear-gradient(135deg, #004e92, #000428); /* Dark Gradient */
+      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%); /* White to Blue gradient */
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -144,7 +144,7 @@
 
     /* Footer */
     footer {
-      background-color: #003366;
+      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%); /* White to Blue gradient */
       color: white;
       padding: 2rem 0;
       display: flex;
