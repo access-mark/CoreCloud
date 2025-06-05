@@ -18,18 +18,21 @@
       padding: 0.8rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
     }
 
     .logo {
-      max-height: 150px;
+      max-height: 120px;
       width: auto;
+      margin-bottom: 1rem;
     }
 
     nav ul {
       list-style: none;
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 1.5rem;
       padding: 0;
       margin: 0;
@@ -39,6 +42,7 @@
       text-decoration: none;
       font-weight: 600;
       color: #0077cc;
+      font-size: 16px;
       padding: 0.5rem 0.75rem;
       transition: color 0.3s ease;
     }
@@ -46,7 +50,7 @@
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
       color: #005fa3;
-      text-decoration: underline;
+      font-weight: bold;
     }
 
     .page-banner {
@@ -56,13 +60,13 @@
       background-position: center;
     }
 
-    .content {
+    main {
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
 
-    .content h1 {
+    h1 {
       font-size: 3rem;
       font-weight: 700;
       text-align: center;
@@ -71,25 +75,35 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .section {
-      margin-top: 3rem;
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
-    .section h2 {
+    .card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
       color: #003366;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 1.25rem;
     }
 
-    .section p {
-      font-size: 1rem;
+    .card p {
       color: #444;
+      font-size: 1rem;
       line-height: 1.6;
     }
 
     .cta-section {
       text-align: center;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
 
     .cta-btn {
@@ -100,86 +114,119 @@
       padding: 1rem 2rem;
       border-radius: 6px;
       text-decoration: none;
-      display: inline-block;
       transition: background-color 0.3s ease;
     }
 
     .cta-btn:hover {
       background-color: #005fa3;
     }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <div class="small-banner">
-    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav style="width: 100%;">
-       <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
-  <li><a href="index.html" class="nav-btn">Home</a></li>
-  <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-  <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-  <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-  <li><a href="resources.html" class="nav-btn">Resources</a></li>
-  <li><a href="contact.html" class="nav-btn">Contact</a></li>
-  <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-</ul>
 
+  <!-- Header -->
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn active">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
+        </ul>
       </nav>
     </header>
   </div>
 
-  <!-- Hero Banner -->
+  <!-- Banner -->
   <div class="page-banner"></div>
 
-  <!-- Page Content -->
-  <div class="division-card">
-  <h2>CoreCloud Talent Placement</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
-    
-    <div style="background:#f9f9f9; padding:1rem; border-radius:8px;">
-      <h3 style="margin-top:0;">Elite Talent</h3>
-      <p>We place highly skilled professionals across cloud, dev, data, security, and architecture domains.</p>
+  <!-- Main Content -->
+  <main>
+    <h1>CoreCloud Talent Placement</h1>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Elite Talent</h3>
+        <p>We place highly skilled professionals across cloud, dev, data, security, and architecture domains.</p>
+      </div>
+
+      <div class="card">
+        <h3>Strategic Sourcing</h3>
+        <p>Through partnerships with CareerWeb and Synthesis, we streamline sourcing, screening, and placement.</p>
+      </div>
+
+      <div class="card">
+        <h3>Contract & Permanent</h3>
+        <p>We support both contract and permanent placements with full compliance and performance replacement guarantees.</p>
+      </div>
+
+      <div class="card">
+        <h3>Executive Oversight</h3>
+        <p>All engagements are guided by CoreCloud leadership to ensure quality, alignment, and measurable outcomes.</p>
+      </div>
     </div>
 
-    <div style="background:#f9f9f9; padding:1rem; border-radius:8px;">
-      <h3 style="margin-top:0;">Strategic Sourcing</h3>
-      <p>Through partnerships with CareerWeb and Synthesis, we streamline sourcing, screening, and placement.</p>
+    <div class="cta-section">
+      <a href="contact.html" class="cta-btn">Book a Talent Strategy Call</a>
     </div>
-
-    <div style="background:#f9f9f9; padding:1rem; border-radius:8px;">
-      <h3 style="margin-top:0;">Contract & Permanent</h3>
-      <p>We support both contract and permanent placements with full compliance and performance replacement guarantees.</p>
-    </div>
-
-    <div style="background:#f9f9f9; padding:1rem; border-radius:8px;">
-      <h3 style="margin-top:0;">Executive Oversight</h3>
-      <p>All engagements are guided by CoreCloud leadership to ensure quality, alignment, and measurable outcomes.</p>
-    </div>
-
-  </div>
-  <div style="margin-top: 1.5rem;">
-    <a href="talent.html" class="nav-btn">Explore Talent Solutions →</a>
-  </div>
-</div>
-
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin" title="LinkedIn">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" class="social-icon twitter" title="Twitter">Twitter</a>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook">Facebook</a>
-        </div>
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
     </div>
-</footer>
-<!-- CoreCloud Chatbot -->
-<script src="https://www.chatbase.co/embed.min.js"
-        chatbotId="2lVQDE6W7igyTrTHXu9Wk"
-        domain="www.chatbase.co"
-        defer>
-</script>
+  </footer>
+
+  <!-- CoreCloud Chatbot -->
+  <script src="https://www.chatbase.co/embed.min.js"
+          chatbotId="2lVQDE6W7igyTrTHXu9Wk"
+          domain="www.chatbase.co"
+          defer>
+  </script>
 
 </body>
 </html>
