@@ -3,94 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Testimonials – CoreCloud</title>
+  <title>Testimonials – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <style>
-    body {
-      background-color: #f4f6f8;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .testimonials-container {
-      max-width: 1100px;
-      margin: 4rem auto;
-      padding: 2rem;
-    }
-
-    h1 {
-      text-align: center;
-      color: #003366;
-      margin-bottom: 3rem;
-    }
-
-    .testimonial {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    .testimonial p.quote {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      font-style: italic;
-      color: #333;
-    }
-
-    .testimonial .author {
-      margin-top: 1.2rem;
-      font-weight: 600;
-      color: #005fa3;
-    }
-
-    .testimonial .meta {
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    footer {
-      background-color: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-  </style>
 </head>
 <body>
-  <div class="testimonials-container">
-    <h1>Client Testimonials</h1>
-
-    <div class="testimonial">
-      <p class="quote">
-        "The CoreCloud consulting team brought structure and vision to our digital transformation. Their ability to assess our needs and drive results through AWS was exceptional."
-      </p>
-      <div class="author">Jane Dlamini</div>
-      <div class="meta">CTO, FinServe Africa</div>
-    </div>
-
-    <div class="testimonial">
-      <p class="quote">
-        "Professional, strategic, and incredibly effective — CoreCloud’s team helped us modernize our cloud architecture while keeping talent and operations aligned."
-      </p>
-      <div class="author">Thabo Mokoena</div>
-      <div class="meta">Head of IT, Zenix Logistics</div>
-    </div>
-
-    <div class="testimonial">
-      <p class="quote">
-        "I highly recommend CoreCloud to any business navigating scale. Their partner model gave us access to top-tier cloud engineers while CoreCloud managed everything seamlessly."
-      </p>
-      <div class="author">Lerato Sibanda</div>
-      <div class="meta">CEO, TechNova Solutions</div>
-    </div>
+  <!-- Header -->
+  <div class="small-banner">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   </div>
 
+  <!-- Main Content -->
+  <main class="content">
+    <h1>What Our Clients Say</h1>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p class="testimonial-text">“CoreCloud helped us transition smoothly to AWS and modernize our operations. Their consultative approach and strategic partners were game-changers.”</p>
+        <p class="testimonial-author">– Sipho M., CIO, FinTech Group</p>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Brilliant service and world-class talent. CoreCloud placed our DevOps lead within 10 days and stayed engaged through the onboarding process.”</p>
+        <p class="testimonial-author">– Anita R., Head of Engineering, HealthTech SA</p>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Their deep cloud expertise and partner network gave us confidence. Highly recommended for mid-market digital transformation.”</p>
+        <p class="testimonial-author">– Johan V., CTO, AutoNet Africa</p>
+      </div>
+    </div>
+
+    <div class="download-cta">
+      <a href="testimonial-form.html" class="btn">Submit a Testimonial</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 CoreCloud. All rights reserved.
+    <div class="footer-content">
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
