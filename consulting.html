@@ -63,6 +63,57 @@
       text-align: center;
       margin: 0;
     }
+
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .cta a {
+      background: #0077cc;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cta a:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -87,6 +138,35 @@
   <div class="page-banner">
     <div class="banner-overlay">
       <h1>Consulting</h1>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Strategic Sales & GTM Advisory</h2>
+    <p>CoreCloud Consulting helps businesses align revenue teams, sharpen execution, and accelerate growth. We bring decades of executive sales leadership, GTM design, and business transformation experience to every engagement.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Sales Process & Enablement</h3>
+        <p>We design and implement modern sales processes, tools, and enablement strategies that increase conversion and shorten sales cycles.</p>
+      </div>
+      <div class="card">
+        <h3>GTM Strategy & Acceleration</h3>
+        <p>From segmentation to value messaging and partner strategy, we drive revenue acceleration with precise, proven go-to-market playbooks.</p>
+      </div>
+      <div class="card">
+        <h3>Team & Org Assessment</h3>
+        <p>We assess team capability, structure, and leadership impact — ensuring every rep is aligned to outcomes and incentivized to win.</p>
+      </div>
+      <div class="card">
+        <h3>Executive Advisory</h3>
+        <p>We partner with CEOs, CROs, and investors to unblock growth bottlenecks, optimize operating models, and drive sustainable success.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="contact.html">Book a Consult</a>
     </div>
   </div>
 </body>
