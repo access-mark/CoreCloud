@@ -1,19 +1,19 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f4f6f8;
+  color: #1e1e1e;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Header Styles */
+/* Header */
 .small-banner {
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -26,15 +26,16 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
 }
 
 .logo {
-  max-height: 220px;
+  max-height: 150px;
   width: auto;
   margin-bottom: 1rem;
 }
 
-/* Navigation Styles */
+/* Navigation */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -50,10 +51,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #003366;
+  color: #0077cc;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 5px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -68,7 +69,7 @@ nav ul li a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #003366;
+  background-color: #0077cc;
   transition: width 0.3s ease;
 }
 
@@ -78,12 +79,12 @@ nav ul li a.active::after {
 }
 
 nav ul li a:hover {
-  color: #001f3f;
+  color: #005fa3;
 }
 
 nav ul li a.active {
+  color: #005fa3;
   font-weight: bold;
-  color: #001f3f;
 }
 
 /* Page Banner */
@@ -100,18 +101,20 @@ main {
 }
 
 .content h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
   color: #003366;
+  margin: 2rem 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
   background-color: #003366;
   color: #fff;
-  padding: 40px 20px;
   text-align: center;
+  padding: 2rem 1rem;
   margin-top: auto;
 }
 
@@ -131,29 +134,24 @@ footer {
 }
 
 .social-links a {
+  margin: 0 1rem;
   color: #fff;
-  margin: 0 15px;
   text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #00FFFF;
   text-decoration: underline;
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media screen and (max-width: 768px) {
   .logo {
-    max-height: 150px;
+    max-height: 120px;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 
   .footer-content {
