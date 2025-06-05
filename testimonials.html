@@ -2,15 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Testimonials – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
+
+    .small-banner {
+      background-color: #fff;
+      padding: 0.8rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      max-height: 150px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
     .page-banner {
+      height: 480px;
       background-image: url('assets/images/testimonials-bannerimage.png');
       background-size: cover;
       background-position: center;
-      height: 480px;
     }
 
     .content {
@@ -23,30 +66,37 @@
       font-size: 3rem;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 3rem;
+      margin: 2rem 0;
       color: #003366;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .testimonial-container {
-      display: flex;
-      flex-direction: column;
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
+      margin-top: 2rem;
     }
 
-    .testimonial-card {
-      background: #fff;
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .testimonial-text {
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card p {
       font-size: 1.1rem;
       color: #333;
     }
 
-    .testimonial-author {
+    .card .testimonial-author {
       margin-top: 1rem;
       font-weight: bold;
       color: #003366;
@@ -64,54 +114,85 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.3s ease;
     }
 
     .download-cta a:hover {
       background-color: #005fa3;
     }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #00FFFF;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header" style="display: flex; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="height: 220px; margin-right: 50px;" />
-      <nav>
-        <ul>
+    <header class="banner-header" style="display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
+      <nav style="width: 100%;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0;">
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
           <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
-          <li><a href="contact.html" class="nav-btn">Contact</a></li>
           <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
         </ul>
       </nav>
     </header>
   </div>
 
-  <!-- Banner -->
+  <!-- Hero Banner -->
   <div class="page-banner"></div>
 
-  <!-- Main Content -->
+  <!-- Page Content -->
   <main class="content">
     <h1>What Our Clients Say</h1>
 
-    <div class="testimonial-container">
-      <div class="testimonial-card">
-        <p class="testimonial-text">“CoreCloud helped us transition smoothly to AWS and modernize our operations. Their consultative approach and strategic partners were game-changers.”</p>
+    <div class="card-grid">
+      <div class="card">
+        <p>“CoreCloud helped us transition smoothly to AWS and modernize our operations. Their consultative approach and strategic partners were game-changers.”</p>
         <p class="testimonial-author">– Sipho M., CIO, FinTech Group</p>
       </div>
 
-      <div class="testimonial-card">
-        <p class="testimonial-text">“Brilliant service and world-class talent. CoreCloud placed our DevOps lead within 10 days and stayed engaged through the onboarding process.”</p>
+      <div class="card">
+        <p>“Brilliant service and world-class talent. CoreCloud placed our DevOps lead within 10 days and stayed engaged through the onboarding process.”</p>
         <p class="testimonial-author">– Anita R., Head of Engineering, HealthTech SA</p>
       </div>
 
-      <div class="testimonial-card">
-        <p class="testimonial-text">“Their deep cloud expertise and partner network gave us confidence. Highly recommended for mid-market digital transformation.”</p>
+      <div class="card">
+        <p>“Their deep cloud expertise and partner network gave us confidence. Highly recommended for mid-market digital transformation.”</p>
         <p class="testimonial-author">– Johan V., CTO, AutoNet Africa</p>
       </div>
     </div>
@@ -132,5 +213,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- CoreCloud Chatbot -->
+  <script src="https://www.chatbase.co/embed.min.js"
+          chatbotId="2lVQDE6W7igyTrTHXu9Wk"
+          domain="www.chatbase.co"
+          defer></script>
 </body>
 </html>
