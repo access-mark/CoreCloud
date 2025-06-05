@@ -16,7 +16,7 @@
 
     /* Navigation Bar Style */
     .small-banner {
-      background-color: #fff; /* White background */
+      background-color: #fff;
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -31,11 +31,13 @@
     .logo {
       max-height: 150px;
       width: auto;
+      margin-right: 2rem;
       transition: transform 0.3s ease; /* Smooth transform on hover */
     }
 
     .logo:hover {
       transform: scale(1.05); /* Logo zoom effect on hover */
+      margin-right: 2.5rem; /* Adjust margin to prevent layout shifting */
     }
 
     nav ul {
@@ -50,7 +52,7 @@
     nav a.nav-btn {
       text-decoration: none;
       font-weight: 600;
-      color: #0077cc; /* Blue color for nav links */
+      color: #0077cc;
       padding: 0.5rem 0.75rem;
       font-size: 1.1rem;
       position: relative;
@@ -59,10 +61,10 @@
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
-      color: #005fa3; /* Dark blue on hover */
-      font-weight: bold; /* Bold effect on hover */
+      color: #005fa3;
+      font-weight: bold;
       font-size: 1.2rem; /* Increased font size on hover */
-      text-decoration: none; /* No underline on hover */
+      text-decoration: none;
     }
 
     nav a.nav-btn::after {
@@ -70,7 +72,7 @@
       position: absolute;
       width: 0;
       height: 2px;
-      background-color: #0077cc; /* Blue underline effect */
+      background-color: #0077cc;
       bottom: 0;
       left: 50%;
       transition: width 0.3s ease, left 0.3s ease;
@@ -78,7 +80,7 @@
 
     nav a.nav-btn:hover::after,
     nav a.nav-btn.active::after {
-      width: 100%; /* Underline expands on hover or when active */
+      width: 100%;
       left: 0;
     }
 
@@ -147,7 +149,7 @@
 
     /* Footer */
     footer {
-      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%); /* White to Blue gradient */
+      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%);
       color: white;
       padding: 2rem 0;
       display: flex;
