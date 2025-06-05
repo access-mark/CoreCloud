@@ -1,244 +1,166 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header Styles */
-header {
-    background-color: transparent;
-    color: white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.small-banner {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+.banner-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-header .logo {
-    height: 200px;
-    margin-right: 50px;
+.logo {
+  max-height: 220px;
+  width: auto;
+  margin-bottom: 1rem;
 }
 
 /* Navigation Styles */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 25px;
+  position: relative;
 }
 
 nav ul li a {
-    color: #00FFFF;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 5px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    transition: color 0.3s ease;
+  color: #00FFFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #00FFFF;
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00FFFF;
+  transition: width 0.3s ease;
 }
 
 nav ul li a:hover::after,
 nav ul li a.active::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav ul li a:hover {
-    color: #00e0ff;
+  color: #00e0ff;
 }
 
 nav ul li a.active {
-    font-weight: bold;
-    color: #00e0ff;
+  font-weight: bold;
+  color: #00e0ff;
+}
+
+/* Page Banner */
+.page-banner {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Main Content */
 main {
-    padding: 20px;
-    flex-grow: 1;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #003366;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #003366;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-top: auto;
+  background-color: #003366;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: auto;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .social-links {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .social-links a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    transition: all 0.3s ease;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #00FFFF;
-    text-decoration: underline;
+  color: #00FFFF;
+  text-decoration: underline;
 }
 
-.social-icon {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
-.social-links a:hover .social-icon {
-    transform: scale(1.2);
-}
-
-.social-icon.linkedin:before {
-    content: "\f08c";
-    font-family: 'FontAwesome';
-}
-
-.social-icon.twitter:before {
-    content: "\f099";
-    font-family: 'FontAwesome';
-}
-
-.social-icon.facebook:before {
-    content: "\f09a";
-    font-family: 'FontAwesome';
-}
-
-/* Testimonial Card Styles */
-.testimonial-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-left: 4px solid #00FFFF;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.testimonial-card h3 {
-    margin-top: 0;
-    color: #003366;
-}
-
-.testimonial-card p {
-    font-style: italic;
-    font-size: 1rem;
-    color: #444;
-}
-
-.testimonial-card .author {
-    font-weight: bold;
-    color: #003366;
-    margin-top: 10px;
-}
-
-/* Form Styles */
-form.testimonial-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    max-width: 600px;
-    margin: 40px auto;
-}
-
-form.testimonial-form input,
-form.testimonial-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: 'Arial', sans-serif;
-}
-
-form.testimonial-form button {
-    background-color: #00FFFF;
-    color: #003366;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form.testimonial-form button:hover {
-    background-color: #00e0ff;
-}
-
-/* Responsive Styles */
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    header .logo {
-        height: 150px;
-    }
+  .logo {
+    max-height: 150px;
+  }
 
-    nav ul {
-        flex-direction: column;
-        text-align: left;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+  .footer-content {
+    text-align: left;
+  }
 
-    .footer-content {
-        text-align: left;
-    }
-
-    .social-links {
-        text-align: left;
-    }
+  .social-links {
+    text-align: left;
+  }
 }
