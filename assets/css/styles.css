@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoreCloud – Build. Modernize. Scale.</title>
+  <title>Contact Us – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
@@ -12,11 +12,14 @@
       font-family: 'Poppins', sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensures full page height */
     }
 
     /* Navigation Bar Style */
     .small-banner {
-      background-color: #fff;
+      background-color: #fff; /* White background */
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -31,13 +34,11 @@
     .logo {
       max-height: 150px;
       width: auto;
-      margin-right: 2rem;
       transition: transform 0.3s ease; /* Smooth transform on hover */
     }
 
     .logo:hover {
       transform: scale(1.05); /* Logo zoom effect on hover */
-      margin-right: 2.5rem; /* Adjust margin to prevent layout shifting */
     }
 
     nav ul {
@@ -52,7 +53,7 @@
     nav a.nav-btn {
       text-decoration: none;
       font-weight: 600;
-      color: #0077cc;
+      color: #0077cc; /* Blue color for nav links */
       padding: 0.5rem 0.75rem;
       font-size: 1.1rem;
       position: relative;
@@ -61,10 +62,10 @@
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
-      color: #005fa3;
-      font-weight: bold;
-      font-size: 1.2rem; /* Increased font size on hover */
-      text-decoration: none;
+      color: #005fa3; /* Dark blue on hover */
+      font-weight: bold; /* Bold on hover */
+      font-size: 1.2rem; /* Larger font size on hover */
+      text-decoration: none; /* No underline on hover */
     }
 
     nav a.nav-btn::after {
@@ -80,7 +81,7 @@
 
     nav a.nav-btn:hover::after,
     nav a.nav-btn.active::after {
-      width: 100%;
+      width: 100%; /* Underline expands on hover */
       left: 0;
     }
 
@@ -149,13 +150,14 @@
 
     /* Footer */
     footer {
-      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%);
+      background: linear-gradient(90deg, #ffffff 0%, #0077cc 100%); /* White to Blue gradient */
       color: white;
       padding: 2rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 0.9rem;
+      clear: both; /* Ensures the footer is not hidden */
     }
 
     footer .socials a {
