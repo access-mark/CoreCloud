@@ -15,11 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 20px; /* Adding padding for spacing */
 }
 
 header .logo {
-    height: 110px; /* Increased logo height by 10% */
-    margin-right: 20px;
+    height: 150px; /* Increased logo height to 150px */
+    margin-left: auto; /* Move logo to the far right */
 }
 
 nav ul {
@@ -27,7 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Align nav items to the right */
+    justify-content: flex-start; /* Align nav items to the left */
 }
 
 nav ul li {
@@ -112,7 +113,7 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header .logo {
-        height: 100px;
+        height: 130px; /* Adjust logo height for smaller screens */
     }
 
     nav ul {
