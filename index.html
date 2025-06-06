@@ -13,24 +13,39 @@
       color: #1e1e1e;
     }
 
-    .small-banner {
-      background-color: #fff;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .logo {
+      height: 160px !important;
+      width: auto;
+      margin-bottom: 1rem;
     }
 
-    .logo {
-      max-height: 150px;
-      width: auto;
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+    }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      justify-content: center;
+      gap: 1.2rem;
       padding: 0;
       margin: 0;
     }
@@ -39,14 +54,16 @@
       text-decoration: none;
       font-weight: 600;
       color: #0077cc;
+      font-size: 16px;
       padding: 0.5rem 0.75rem;
       transition: color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
       color: #005fa3;
-      text-decoration: underline;
+      font-weight: bold;
     }
 
     .page-banner {
@@ -54,6 +71,7 @@
       background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
+      margin-top: 240px;
     }
 
     .content {
@@ -140,29 +158,62 @@
     .centered {
       text-align: center;
     }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Header -->
   <div class="small-banner">
-  <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
-    <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-    <nav style="width: 100%;">
-      <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
-  <li><a href="index.html" class="nav-btn">Home</a></li>
-  <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-  <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-  <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-  <li><a href="resources.html" class="nav-btn">Resources</a></li>
-  <li><a href="contact.html" class="nav-btn">Contact</a></li>
-  <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-</ul>
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn active">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-    </nav>
-  </header>
-</div>
-
-  <!-- Hero Banner -->
+  <!-- Banner -->
   <div class="page-banner"></div>
 
   <!-- Page Content -->
@@ -183,13 +234,11 @@
         <p>Sales transformation, GTM acceleration, and executive-level advisory. Strategy meets execution.</p>
         <a href="consulting.html" class="nav-btn">Explore Consulting →</a>
       </div>
-
       <div class="division-card">
         <h2>CoreCloud AWS Service Suite</h2>
         <p>Migrate, Modernize, Manage & Optimize with AWS-certified experts and ecosystem partners.</p>
         <a href="aws.html" class="nav-btn">Explore AWS Services →</a>
       </div>
-
       <div class="division-card">
         <h2>CoreCloud Talent Placement</h2>
         <p>Elite professionals sourced, screened, and placed through strategic partnerships with Careerweb and Synthesis.</p>
@@ -197,22 +246,23 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin" title="LinkedIn">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" class="social-icon twitter" title="Twitter">Twitter</a>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook">Facebook</a>
-        </div>
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
     </div>
-</footer>
-<!-- CoreCloud Chatbot -->
-<script src="https://www.chatbase.co/embed.min.js"
-        chatbotId="2lVQDE6W7igyTrTHXu9Wk"
-        domain="www.chatbase.co"
-        defer>
-</script>
+  </footer>
 
+  <!-- Chatbot -->
+  <script src="https://www.chatbase.co/embed.min.js"
+          chatbotId="2lVQDE6W7igyTrTHXu9Wk"
+          domain="www.chatbase.co"
+          defer></script>
 </body>
 </html>
