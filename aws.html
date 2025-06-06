@@ -13,24 +13,39 @@
       color: #1e1e1e;
     }
 
-    .small-banner {
-      background-color: #fff;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .logo {
+      height: 160px !important;
+      width: auto;
+      margin-bottom: 1rem;
     }
 
-    .logo {
-      max-height: 150px;
-      width: auto;
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+    }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      justify-content: center;
+      gap: 1.2rem;
       padding: 0;
       margin: 0;
     }
@@ -39,14 +54,16 @@
       text-decoration: none;
       font-weight: 600;
       color: #0077cc;
+      font-size: 16px;
       padding: 0.5rem 0.75rem;
       transition: color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
       color: #005fa3;
-      text-decoration: underline;
+      font-weight: bold;
     }
 
     .page-banner {
@@ -54,6 +71,7 @@
       background-image: url('assets/images/aws-bannerimage.png');
       background-size: cover;
       background-position: center;
+      margin-top: 240px;
     }
 
     .content {
@@ -71,14 +89,14 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .card-grid {
+    .division-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
-    .card {
+    .division-card {
       background: #ffffff;
       border-radius: 12px;
       padding: 2rem;
@@ -86,91 +104,136 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .card:hover {
+    .division-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
-    .card h2 {
+    .division-card h2 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
       color: #222;
     }
 
-    .card p {
+    .division-card p {
       font-size: 1rem;
       color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: #0077cc;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <div class="small-banner">
-    <header class="banner-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav style="width: 100%;">
-        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none;">
-  <li><a href="index.html" class="nav-btn">Home</a></li>
-  <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-  <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-  <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
-  <li><a href="resources.html" class="nav-btn">Resources</a></li>
-  <li><a href="contact.html" class="nav-btn">Contact</a></li>
-  <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-</ul>
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
+          <li><a href="aws.html" class="nav-btn active">AWS Service Suite</a></li>
+          <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="resources.html" class="nav-btn">Resources</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+          <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
+        </ul>
       </nav>
     </header>
   </div>
 
-  <!-- Hero Banner -->
   <div class="page-banner"></div>
 
-  <!-- Page Content -->
   <main class="content">
-    <h1>AWS Service Suite</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h2>Migrate with Confidence</h2>
-        <p>Accelerate your move to AWS with a proven migration framework. We handle readiness assessments, workload analysis, and seamless cutover—with minimal disruption.</p>
+    <h1>CoreCloud AWS Service Suite</h1>
+    <section class="division-grid">
+      <div class="division-card">
+        <h2>Migrate</h2>
+        <p>Seamlessly lift and shift workloads to AWS with minimal disruption, cost, and complexity.</p>
       </div>
-      <div class="card">
-        <h2>Modernize Workloads</h2>
-        <p>Transform legacy systems into modern, scalable architectures. Whether refactoring, replatforming, or rebuilding, we align AWS-native services to your business goals.</p>
+      <div class="division-card">
+        <h2>Modernize</h2>
+        <p>Transform legacy systems and unlock agility with containerization, serverless, and AI-native architectures.</p>
       </div>
-      <div class="card">
-        <h2>Manage & Operate at Scale</h2>
-        <p>We offer ongoing managed services, covering monitoring, optimization, security, patching, and compliance—freeing your team to focus on innovation.</p>
+      <div class="division-card">
+        <h2>Manage</h2>
+        <p>Full-service operations across backup, DR, monitoring, security, and cost optimization — all on AWS.</p>
       </div>
-      <div class="card">
-        <h2>Cost Optimization</h2>
-        <p>Stop cloud bill shock. We analyze usage patterns and apply reserved instances, auto-scaling, and tagging policies to slash costs and increase visibility.</p>
+      <div class="division-card">
+        <h2>Partner Orchestration</h2>
+        <p>CoreCloud acts as your strategic broker — matching your needs with the right specialist AWS partners.</p>
       </div>
-      <div class="card">
-        <h2>Well-Architected Reviews</h2>
-        <p>We assess your cloud environment against AWS best practices for security, performance, cost-efficiency, and reliability. Gaps become opportunities.</p>
-      </div>
-      <div class="card">
-        <h2>Partner Ecosystem Delivery</h2>
-        <p>Through strategic partnerships with LSD, Synthesis, and DVT, we orchestrate expert execution and ensure certified delivery across every engagement.</p>
-      </div>
+    </section>
+    <div class="centered" style="margin-top: 2rem;">
+      <a href="contact.html" class="cta-btn">Book a Cloud Consultation</a>
     </div>
   </main>
+
   <footer>
     <div class="footer-content">
-        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin" title="LinkedIn">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" class="social-icon twitter" title="Twitter">Twitter</a>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook">Facebook</a>
-        </div>
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
     </div>
-</footer>
-<!-- CoreCloud Chatbot -->
-<script src="https://www.chatbase.co/embed.min.js"
-        chatbotId="2lVQDE6W7igyTrTHXu9Wk"
-        domain="www.chatbase.co"
-        defer>
-</script>
+  </footer>
 
+  <script src="https://www.chatbase.co/embed.min.js"
+          chatbotId="2lVQDE6W7igyTrTHXu9Wk"
+          domain="www.chatbase.co"
+          defer></script>
 </body>
 </html>
