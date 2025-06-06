@@ -5,8 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Talent Placement – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
+
+    .small-banner {
+      background-color: #fff;
+      padding: 0.8rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      max-height: 150px;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
+    .page-banner {
+      height: 480px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('assets/images/talent-bannerimage.png');
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: #0077cc;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #005fa3;
+    }
+
+    .division-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .division-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .division-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .division-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 4rem;
+      background-color: #fff;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+      color: #777;
+    }
+
+    .social-links {
+      margin-top: 0.5rem;
+    }
+
+    .social-links a {
+      margin: 0 0.75rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navigation -->
   <div class="small-banner">
     <header class="banner-header">
@@ -26,7 +181,7 @@
   </div>
 
   <!-- Hero Banner -->
-  <div class="page-banner" style="background-image: url('assets/images/talent-bannerimage.png');"></div>
+  <div class="page-banner"></div>
 
   <!-- Page Content -->
   <main class="content">
@@ -60,12 +215,12 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-        <p>&copy; 2025 CoreCloud. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </div>
+      <p>&copy; 2025 CoreCloud. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
     </div>
   </footer>
 
