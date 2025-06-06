@@ -12,11 +12,47 @@
       background-color: #f4f6f8;
       color: #1e1e1e;
     }
+
     .logo {
       height: 160px;
       width: auto;
       margin-bottom: 1rem;
     }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      font-size: 16px;
+      padding: 0.5rem 0.75rem;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      font-weight: bold;
+    }
+
     .page-banner {
       height: 480px;
       background-image: url('assets/images/consulting-bannerimage.png');
@@ -24,11 +60,22 @@
       background-position: center;
       margin-top: 200px;
     }
+
     .content {
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
     .hero-subtitle {
       text-align: center;
       font-size: 1.3rem;
@@ -36,6 +83,43 @@
       color: #333;
       margin-bottom: 2rem;
     }
+
+    .division-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .division-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .division-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .division-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .division-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
     .cta-btn {
       display: inline-block;
       background-color: #0077cc;
@@ -47,40 +131,46 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
+
     .cta-btn:hover {
       background-color: #005fa3;
     }
-    .division-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
     }
-    .division-card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s, box-shadow 0.3s;
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    .division-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
     }
-    .division-card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #222;
+
+    .social-links {
+      margin-top: 15px;
     }
-    .division-card p {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 1rem;
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
@@ -99,36 +189,36 @@
     </header>
   </div>
 
-  <!-- Page Banner -->
   <div class="page-banner"></div>
 
-  <!-- Hero Section -->
   <main class="content">
     <h1>CoreCloud Consulting</h1>
-    <p class="hero-subtitle">
-      We help tech-driven businesses unlock growth by aligning sales, GTM, and strategy with execution. Our consulting engagements are led by proven ICT executives who drive real outcomes.
-    </p>
-    <div class="centered">
-      <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
-    </div>
+    <p class="hero-subtitle">Where strategy meets scale. We accelerate your revenue engine, modernize your go-to-market, and bring high-impact execution leadership into your business.</p>
 
     <section class="division-grid">
       <div class="division-card">
-        <h2>Sales & GTM Transformation</h2>
-        <p>End-to-end sales audits, pricing strategy, pipeline structure, and conversion improvement for B2B organizations.</p>
+        <h2>Sales Acceleration Blueprint</h2>
+        <p>We assess, diagnose, and rebuild your sales engine with a structured audit covering leadership, team capacity, CRM systems, pipeline, and performance tracking.</p>
+      </div>
+      <div class="division-card">
+        <h2>Go-to-Market Strategy</h2>
+        <p>We define winning value propositions, segment targets, and create repeatable GTM motions backed by battle-tested frameworks and real-world experience.</p>
       </div>
       <div class="division-card">
         <h2>Executive Advisory</h2>
-        <p>High-impact guidance from seasoned ICT executives with a proven record in scaling cloud, cybersecurity, and services businesses.</p>
+        <p>Led by Mark Louw and senior CoreCloud partners, we bring decades of experience from Dell, NTT, and TrueMark to help you lead and scale with confidence.</p>
       </div>
       <div class="division-card">
-        <h2>Sales Org Design</h2>
-        <p>Assessments, scorecards, role clarity, compensation alignment, and performance frameworks to unlock accountability.</p>
+        <h2>Client Spotlight</h2>
+        <p>One of South Africa’s leading ICT firms rebuilt its sales funnel and doubled conversion rates within 6 months of adopting our sales methodology. That’s impact.</p>
       </div>
     </section>
+
+    <div class="centered" style="margin-top: 2rem;">
+      <a href="contact.html" class="cta-btn">Start Your Strategy</a>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 CoreCloud. All rights reserved.</p>
