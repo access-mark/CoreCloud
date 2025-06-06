@@ -8,9 +8,16 @@
   <style>
     body {
       margin: 0;
+      padding-top: 200px;
       font-family: 'Segoe UI', Roboto, sans-serif;
       background-color: #f4f6f8;
       color: #1e1e1e;
+    }
+
+    .logo {
+      height: 120px !important;
+      width: auto;
+      margin-bottom: 1rem;
     }
 
     .small-banner {
@@ -35,12 +42,6 @@
       width: 100%;
     }
 
-    .logo {
-  height: 120px;
-  width: auto;
-  margin-bottom: 1rem;
-}
-
     nav ul {
       list-style: none;
       display: flex;
@@ -48,7 +49,6 @@
       gap: 1.2rem;
       padding: 0;
       margin: 0;
-      flex-wrap: nowrap;
     }
 
     nav a.nav-btn {
@@ -72,7 +72,6 @@
       background-image: url('assets/images/talent-bannerimage.png');
       background-size: cover;
       background-position: center;
-      margin-top: 200px;
     }
 
     .content {
@@ -174,29 +173,9 @@
     .social-links a:hover {
       text-decoration: underline;
     }
-
-    @media screen and (max-width: 768px) {
-      .logo {
-        max-height: 100px;
-      }
-
-      nav ul {
-        flex-wrap: wrap;
-      }
-
-      .footer-content {
-        text-align: left;
-      }
-
-      .social-links {
-        text-align: left;
-      }
-    }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
@@ -215,10 +194,8 @@
     </header>
   </div>
 
-  <!-- Hero Banner -->
   <div class="page-banner"></div>
 
-  <!-- Page Content -->
   <main class="content">
     <h1>CoreCloud Talent Placement</h1>
     <section class="division-grid">
@@ -226,17 +203,14 @@
         <h2>Elite Talent</h2>
         <p>We place highly skilled professionals across cloud, dev, data, security, and architecture domains.</p>
       </div>
-
       <div class="division-card">
         <h2>Strategic Sourcing</h2>
         <p>Through partnerships with CareerWeb and Synthesis, we streamline sourcing, screening, and placement.</p>
       </div>
-
       <div class="division-card">
         <h2>Contract & Permanent</h2>
         <p>We support both contract and permanent placements with full compliance and performance replacement guarantees.</p>
       </div>
-
       <div class="division-card">
         <h2>Executive Oversight</h2>
         <p>All engagements are guided by CoreCloud leadership to ensure quality, alignment, and measurable outcomes.</p>
@@ -247,7 +221,6 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 CoreCloud. All rights reserved.</p>
@@ -259,11 +232,9 @@
     </div>
   </footer>
 
-  <!-- CoreCloud Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
           defer></script>
-
 </body>
 </html>
