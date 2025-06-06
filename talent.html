@@ -13,31 +13,18 @@
       color: #1e1e1e;
     }
 
-    .logo {
-      height: 120px !important;
-      width: auto;
-      margin-bottom: 1rem;
-    }
-
-    <!-- Header -->
-<div class="small-banner">
-  <header class="banner-header">
-    <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="height: 160px; width: auto; margin-bottom: 1rem;" />
-    <nav>
-      <ul>
-        <li><a href="index.html" class="nav-btn">Home</a></li>
-        <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
-        <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
-        <li><a href="talent.html" class="nav-btn active">Talent Placement</a></li>
-        <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
-        <li><a href="resources.html" class="nav-btn">Resources</a></li>
-        <li><a href="contact.html" class="nav-btn">Contact</a></li>
-        <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
-
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
     }
 
     .banner-header {
@@ -48,6 +35,12 @@
       width: 100%;
     }
 
+    .logo {
+      height: 160px;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -55,6 +48,7 @@
       gap: 1.2rem;
       padding: 0;
       margin: 0;
+      flex-wrap: nowrap;
     }
 
     nav a.nav-btn {
@@ -78,7 +72,7 @@
       background-image: url('assets/images/talent-bannerimage.png');
       background-size: cover;
       background-position: center;
-      margin-top: 200px;
+      margin-top: 220px;
     }
 
     .content {
@@ -180,9 +174,28 @@
     .social-links a:hover {
       text-decoration: underline;
     }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        height: 120px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      .footer-content {
+        text-align: left;
+      }
+
+      .social-links {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
@@ -201,8 +214,10 @@
     </header>
   </div>
 
+  <!-- Hero Banner -->
   <div class="page-banner"></div>
 
+  <!-- Main Content -->
   <main class="content">
     <h1>CoreCloud Talent Placement</h1>
     <section class="division-grid">
@@ -228,6 +243,7 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 CoreCloud. All rights reserved.</p>
@@ -239,6 +255,7 @@
     </div>
   </footer>
 
+  <!-- Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
