@@ -6,10 +6,168 @@
   <title>White Paper – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
+    body {
+      margin: 0;
+      padding-top: 200px;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
+    }
+
     .logo {
-      height: 120px;
+      height: 120px !important;
       width: auto;
       margin-bottom: 1rem;
+    }
+
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+    }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      font-size: 16px;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      font-weight: bold;
+    }
+
+    .page-banner {
+      height: 480px;
+      background-image: url('assets/images/white-paper-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #005fa3;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .diagram {
+      text-align: center;
+    }
+
+    .diagram img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0077cc;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #005fa3;
+    }
+
+    .download-cta {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -35,7 +193,7 @@
   </div>
 
   <!-- Page Banner -->
-  <div class="page-banner" style="background-image: url('assets/images/white-paper-bannerimage.png'); margin-top: 200px; height: 480px; background-size: cover; background-position: center;"></div>
+  <div class="page-banner"></div>
 
   <!-- Main Content -->
   <main class="content">
@@ -52,19 +210,19 @@
 
     <section class="section">
       <h2>Core Transformation Lifecycle</h2>
-      <div class="diagram" style="text-align: center;">
-        <img src="assets/images/corecloud-lifecycle-diagram.png" alt="Lifecycle Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
+      <div class="diagram">
+        <img src="assets/images/corecloud-lifecycle-diagram.png" alt="Lifecycle Diagram" />
       </div>
     </section>
 
     <section class="section">
       <h2>Strategic Pillars</h2>
-      <div class="diagram" style="text-align: center;">
-        <img src="assets/images/corecloud-pillars-diagram.png" alt="Pillars Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
+      <div class="diagram">
+        <img src="assets/images/corecloud-pillars-diagram.png" alt="Pillars Diagram" />
       </div>
     </section>
 
-    <div class="download-cta" style="text-align: center; margin-top: 3rem;">
+    <div class="download-cta">
       <h2>Download the Full White Paper</h2>
       <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.docx" download class="btn">Download .DOCX</a>
       <a href="assets/downloads/CoreCloud_White_Paper_2025_Full_Two_Diagrams.pdf" download class="btn">Download PDF</a>
@@ -87,7 +245,6 @@
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
-          defer>
-  </script>
+          defer></script>
 </body>
 </html>
