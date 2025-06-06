@@ -6,75 +6,173 @@
   <title>Contact – CoreCloud</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 3rem;
+    body, input, textarea, button {
+      font-family: 'Segoe UI', Roboto, sans-serif;
     }
 
-    .contact-info {
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.6;
+    body {
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
     }
 
-    .contact-info h2 {
-      color: #003366;
+    .logo {
+      height: 160px;
+      width: auto;
       margin-bottom: 1rem;
     }
 
-    .contact-form {
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
     }
 
-    .contact-form label {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      padding: 0.8rem;
-      font-size: 1rem;
-      margin-bottom: 1.2rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
       width: 100%;
     }
 
-    .contact-form textarea {
-      resize: vertical;
-      min-height: 120px;
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0;
+      margin: 0;
+      flex-wrap: nowrap;
     }
 
-    .contact-form button {
+    nav a.nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      font-size: 16px;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav a.nav-btn:hover,
+    nav a.nav-btn.active {
+      color: #005fa3;
+      font-weight: bold;
+    }
+
+    .page-banner {
+      height: 480px;
+      background-image: url('assets/images/contact-bannerimage.png');
+      background-size: cover;
+      background-position: center;
+      margin-top: 200px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #003366;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
       background-color: #0077cc;
       color: #fff;
-      border: none;
-      padding: 1rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
       font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    .contact-form button:hover {
+    button:hover {
       background-color: #005fa3;
     }
 
-    @media (max-width: 768px) {
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="height: 160px; width: auto; margin-bottom: 1rem;" />
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
       <nav>
         <ul>
           <li><a href="index.html" class="nav-btn">Home</a></li>
@@ -90,42 +188,27 @@
     </header>
   </div>
 
-  <div class="page-banner" style="background-image: url('assets/images/contact-bannerimage.png');"></div>
+  <!-- Banner -->
+  <div class="page-banner"></div>
 
+  <!-- Contact Form -->
   <main class="content">
-    <h1>Get in Touch</h1>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2>CoreCloud (Pty) Ltd</h2>
-        <p>433 Broadacres Country Estate<br/>
-        Syringa Road, Broadacres<br/>
-        Johannesburg, South Africa</p>
-        <p>Email: <a href="mailto:info@corecloud.group">info@corecloud.group</a><br/>
-        Phone: +27 11 123 4567</p>
-        <p><strong>Business Hours:</strong><br/>
-        Monday – Friday: 08:00 – 17:00</p>
-        <div style="margin-top: 2rem;">
-          <img src="assets/images/map-placeholder.png" alt="Map" style="width: 100%; border-radius: 8px;" />
-        </div>
-      </div>
-      <form class="contact-form" action="mailto:info@corecloud.group" method="POST" enctype="text/plain">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+    <h1>Let’s Connect</h1>
+    <form action="https://formspree.io/f/mayvlrnp" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required />
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 CoreCloud. All rights reserved.</p>
@@ -137,6 +220,7 @@
     </div>
   </footer>
 
+  <!-- Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
