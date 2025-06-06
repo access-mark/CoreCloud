@@ -13,24 +13,39 @@
       color: #1e1e1e;
     }
 
-    .small-banner {
-      background-color: #fff;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .logo {
+      height: 160px !important;
+      width: auto;
+      margin-bottom: 1rem;
     }
 
-    .logo {
-      max-height: 150px;
-      width: auto;
+    .small-banner {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+    }
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      justify-content: center;
+      gap: 1.2rem;
       padding: 0;
       margin: 0;
     }
@@ -39,14 +54,16 @@
       text-decoration: none;
       font-weight: 600;
       color: #0077cc;
+      font-size: 16px;
       padding: 0.5rem 0.75rem;
       transition: color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a.nav-btn:hover,
     nav a.nav-btn.active {
       color: #005fa3;
-      text-decoration: underline;
+      font-weight: bold;
     }
 
     .page-banner {
@@ -54,10 +71,11 @@
       background-image: url('assets/images/testimonials-bannerimage.png');
       background-size: cover;
       background-position: center;
+      margin-top: 240px;
     }
 
     .content {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
@@ -71,60 +89,31 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: #ffffff;
+    .testimonial {
+      background-color: #ffffff;
       border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 2rem;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    }
-
-    .card p {
+    .testimonial p {
       font-size: 1.1rem;
+      line-height: 1.6;
       color: #333;
     }
 
-    .card .testimonial-author {
+    .testimonial .author {
       margin-top: 1rem;
       font-weight: bold;
-      color: #003366;
-    }
-
-    .download-cta {
-      text-align: center;
-      margin-top: 4rem;
-    }
-
-    .download-cta a {
-      background-color: #0077cc;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .download-cta a:hover {
-      background-color: #005fa3;
+      color: #0077cc;
     }
 
     footer {
       background-color: #003366;
       color: #fff;
-      padding: 40px 20px;
       text-align: center;
+      padding: 2rem 1rem;
       margin-top: 4rem;
     }
 
@@ -139,31 +128,33 @@
       font-weight: 300;
     }
 
+    .social-links {
+      margin-top: 15px;
+    }
+
     .social-links a {
+      margin: 0 1rem;
       color: #fff;
-      margin: 0 15px;
       text-decoration: none;
-      font-size: 18px;
-      transition: all 0.3s ease;
     }
 
     .social-links a:hover {
-      color: #00FFFF;
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Header -->
   <div class="small-banner">
-    <header class="banner-header" style="display: flex; flex-direction: column; align-items: center; padding: 1rem 0;">
-      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" style="margin-bottom: 1rem;" />
-      <nav style="width: 100%;">
-        <ul style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 0; margin: 0;">
+    <header class="banner-header">
+      <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
+      <nav>
+        <ul>
           <li><a href="index.html" class="nav-btn">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
           <li><a href="contact.html" class="nav-btn">Contact</a></li>
           <li><a href="testimonials.html" class="nav-btn active">Testimonials</a></li>
@@ -172,32 +163,26 @@
     </header>
   </div>
 
-  <!-- Hero Banner -->
+  <!-- Banner -->
   <div class="page-banner"></div>
 
-  <!-- Page Content -->
+  <!-- Content -->
   <main class="content">
     <h1>What Our Clients Say</h1>
 
-    <div class="card-grid">
-      <div class="card">
-        <p>“CoreCloud helped us transition smoothly to AWS and modernize our operations. Their consultative approach and strategic partners were game-changers.”</p>
-        <p class="testimonial-author">– Sipho M., CIO, FinTech Group</p>
-      </div>
-
-      <div class="card">
-        <p>“Brilliant service and world-class talent. CoreCloud placed our DevOps lead within 10 days and stayed engaged through the onboarding process.”</p>
-        <p class="testimonial-author">– Anita R., Head of Engineering, HealthTech SA</p>
-      </div>
-
-      <div class="card">
-        <p>“Their deep cloud expertise and partner network gave us confidence. Highly recommended for mid-market digital transformation.”</p>
-        <p class="testimonial-author">– Johan V., CTO, AutoNet Africa</p>
-      </div>
+    <div class="testimonial">
+      <p>“CoreCloud completely transformed our go-to-market execution. Their consulting team aligned our sales strategy with AWS migration priorities and helped us win major clients in record time.”</p>
+      <div class="author">– Daniel M., CTO, Fintech Leader</div>
     </div>
 
-    <div class="download-cta">
-      <a href="testimonial-form.html">Submit a Testimonial</a>
+    <div class="testimonial">
+      <p>“The talent placement process was fast, professional, and flawless. We onboarded two elite cloud architects in under 2 weeks.”</p>
+      <div class="author">– Lerato N., Head of Cloud Delivery</div>
+    </div>
+
+    <div class="testimonial">
+      <p>“Partnering with CoreCloud allowed us to scale AWS services without upfront hiring risk. Their orchestrator model is exactly what South African enterprises need.”</p>
+      <div class="author">– Sipho K., Managing Director, Tech Integrator</div>
     </div>
   </main>
 
@@ -213,7 +198,7 @@
     </div>
   </footer>
 
-  <!-- CoreCloud Chatbot -->
+  <!-- Chatbot -->
   <script src="https://www.chatbase.co/embed.min.js"
           chatbotId="2lVQDE6W7igyTrTHXu9Wk"
           domain="www.chatbase.co"
