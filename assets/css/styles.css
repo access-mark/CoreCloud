@@ -36,7 +36,7 @@
     }
 
     .logo {
-      max-height: 120px;
+      height: 120px !important;
       width: auto;
       margin-bottom: 1rem;
     }
@@ -72,7 +72,7 @@
       background-image: url('assets/images/sandton-bannerimage.png');
       background-size: cover;
       background-position: center;
-      margin-top: 200px; /* makes room for the fixed header */
+      margin-top: 200px;
     }
 
     .content {
@@ -195,7 +195,8 @@
 
     @media screen and (max-width: 768px) {
       .logo {
-        max-height: 100px;
+        height: 120px !important;
+        max-height: none;
       }
 
       nav ul {
@@ -220,7 +221,7 @@
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="index.html" class="nav-btn active">Home</a></li>
           <li><a href="consulting.html" class="nav-btn">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
