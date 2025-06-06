@@ -12,119 +12,30 @@
       background-color: #f4f6f8;
       color: #1e1e1e;
     }
-
     .logo {
-      height: 160px !important;
+      height: 160px;
       width: auto;
       margin-bottom: 1rem;
     }
-
-    .small-banner {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      padding: 1rem 2rem;
-    }
-
-    .banner-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 1200px;
-      width: 100%;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav a.nav-btn {
-      text-decoration: none;
-      font-weight: 600;
-      color: #0077cc;
-      font-size: 16px;
-      padding: 0.5rem 0.75rem;
-      transition: color 0.3s ease;
-      white-space: nowrap;
-    }
-
-    nav a.nav-btn:hover,
-    nav a.nav-btn.active {
-      color: #005fa3;
-      font-weight: bold;
-    }
-
     .page-banner {
       height: 480px;
       background-image: url('assets/images/consulting-bannerimage.png');
       background-size: cover;
       background-position: center;
-      margin-top: 240px;
+      margin-top: 200px;
     }
-
     .content {
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1.5rem;
     }
-
-    .content h1 {
-      font-size: 3rem;
-      font-weight: 700;
+    .hero-subtitle {
       text-align: center;
-      margin: 2rem 0;
-      color: #003366;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 2rem;
     }
-
-    .division-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .division-card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .division-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    }
-
-    .division-card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #222;
-    }
-
-    .division-card p {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-
-    .centered {
-      text-align: center;
-    }
-
     .cta-btn {
       display: inline-block;
       background-color: #0077cc;
@@ -136,46 +47,40 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
     .cta-btn:hover {
       background-color: #005fa3;
     }
-
-    footer {
-      background-color: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
+    .division-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
     }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
+    .division-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .footer-content p {
-      font-size: 16px;
-      margin-bottom: 20px;
-      font-weight: 300;
+    .division-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
-
-    .social-links {
-      margin-top: 15px;
+    .division-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #222;
     }
-
-    .social-links a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
+    .division-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <div class="small-banner">
     <header class="banner-header">
       <img src="assets/images/corecloud-logo.png" alt="CoreCloud Logo" class="logo" />
@@ -185,6 +90,7 @@
           <li><a href="consulting.html" class="nav-btn active">Consulting</a></li>
           <li><a href="aws.html" class="nav-btn">AWS Service Suite</a></li>
           <li><a href="talent.html" class="nav-btn">Talent Placement</a></li>
+          <li><a href="white-paper.html" class="nav-btn">White Paper</a></li>
           <li><a href="resources.html" class="nav-btn">Resources</a></li>
           <li><a href="contact.html" class="nav-btn">Contact</a></li>
           <li><a href="testimonials.html" class="nav-btn">Testimonials</a></li>
@@ -193,33 +99,36 @@
     </header>
   </div>
 
+  <!-- Page Banner -->
   <div class="page-banner"></div>
 
+  <!-- Hero Section -->
   <main class="content">
     <h1>CoreCloud Consulting</h1>
+    <p class="hero-subtitle">
+      We help tech-driven businesses unlock growth by aligning sales, GTM, and strategy with execution. Our consulting engagements are led by proven ICT executives who drive real outcomes.
+    </p>
+    <div class="centered">
+      <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
+    </div>
+
     <section class="division-grid">
       <div class="division-card">
-        <h2>Sales Strategy</h2>
-        <p>We analyze your sales ecosystem, identify performance gaps, and rebuild from the ground up — methodology, tech, team, and execution.</p>
-      </div>
-      <div class="division-card">
-        <h2>GTM Acceleration</h2>
-        <p>Our proven GTM playbooks and partner alignment unlock revenue velocity and strategic growth opportunities across sectors.</p>
+        <h2>Sales & GTM Transformation</h2>
+        <p>End-to-end sales audits, pricing strategy, pipeline structure, and conversion improvement for B2B organizations.</p>
       </div>
       <div class="division-card">
         <h2>Executive Advisory</h2>
-        <p>We engage directly with leadership to shape commercial vision, guide prioritization, and ensure delivery is aligned to value.</p>
+        <p>High-impact guidance from seasoned ICT executives with a proven record in scaling cloud, cybersecurity, and services businesses.</p>
       </div>
       <div class="division-card">
-        <h2>End-to-End Support</h2>
-        <p>From audit to execution, our consulting engagements are structured, high-impact, and fully aligned to your commercial goals.</p>
+        <h2>Sales Org Design</h2>
+        <p>Assessments, scorecards, role clarity, compensation alignment, and performance frameworks to unlock accountability.</p>
       </div>
     </section>
-    <div class="centered" style="margin-top: 2rem;">
-      <a href="contact.html" class="cta-btn">Book a Strategy Call</a>
-    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 CoreCloud. All rights reserved.</p>
